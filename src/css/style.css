@@ -12,7 +12,8 @@ header {
   background-color: #2d3142;
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  height: 90px; }
   header .topnav__list {
     list-style-type: none; }
     header .topnav__list .topnav__item {
@@ -20,14 +21,15 @@ header {
       text-align: center;
       margin-right: 20px;
       padding: 0 10px;
-      line-height: 30px;
+      line-height: 40px;
       transition: 200ms ease-out; }
       header .topnav__list .topnav__item .topnav__link {
         color: #EF8354;
         font-family: 'Raleway', sans-serif;
-        font-size: 1.1em; }
+        font-size: 1.3em; }
 
-.topnav__link:hover {
-  color: white; }
+.topnav__item:hover {
+  border-radius: 10px;
+  border: 1px solid white; }
 
 /*# sourceMappingURL=style.css.map */
