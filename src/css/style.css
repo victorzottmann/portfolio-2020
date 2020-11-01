@@ -58,7 +58,7 @@ a:-webkit-any-link {
     width: 75%; }
 
 .profile-img {
-  width: 300px;
+  width: auto;
   height: 300px;
   float: right;
   margin-left: 10px;
