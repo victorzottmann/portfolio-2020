@@ -4,6 +4,10 @@
 $primary-color: #2d3142;
 $secondary-color: #EF8354;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -35,24 +39,33 @@ header {
     .topnav__item {
       display: inline-block;
       text-align: center;
-      margin-right: 20px;
-      padding: 0 10px;
+      margin-right: 40px;
       line-height: 40px;
-      transition: 200ms ease-out;
 
       .topnav__link {
         color: $secondary-color;
         font-family: 'Raleway', sans-serif;
         font-size: 1.3em;
-        transition: 0.5s;
+        
       }
     }
   }
 }
 
 .topnav__item:hover {
-  border-radius: 40px;
-  border: 1px solid white;
+  // border-radius: 10px;
+  border-bottom: 2px solid white;
+  transition: 20ms;
+}
+
+#active__item {
+  // background-color: white;
+  border-bottom: 2px solid $secondary-color;
+  // border-radius: 10px;
+
+  #active__link {
+    color: white;
+  }
 }
 
 // .diagonal-box {

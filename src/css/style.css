@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+* {
+  box-sizing: border-box; }
+
 body {
   background-color: white;
   margin: 0; }
@@ -25,19 +28,21 @@ header {
     header .topnav__list .topnav__item {
       display: inline-block;
       text-align: center;
-      margin-right: 20px;
-      padding: 0 10px;
-      line-height: 40px;
-      transition: 200ms ease-out; }
+      margin-right: 40px;
+      line-height: 40px; }
       header .topnav__list .topnav__item .topnav__link {
         color: #EF8354;
         font-family: 'Raleway', sans-serif;
-        font-size: 1.3em;
-        transition: 0.5s; }
+        font-size: 1.3em; }
 
 .topnav__item:hover {
-  border-radius: 40px;
-  border: 1px solid white; }
+  border-bottom: 2px solid white;
+  transition: 20ms; }
+
+#active__item {
+  border-bottom: 2px solid #EF8354; }
+  #active__item #active__link {
+    color: white; }
 
 .content {
   font-family: 'Raleway', sans-serif;
