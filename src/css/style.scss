@@ -4,7 +4,9 @@
 $primary-color: #2d3142;
 $secondary-color: #EF8354;
 
-* {
+$primary-font: 'Raleway', sans-serif;
+
+html {
   box-sizing: border-box;
 }
 
@@ -19,13 +21,7 @@ a:-webkit-any-link {
   cursor: pointer;
 }
 
-h3 {
-  margin-top: 0;
-  font-size: 2em;
-  font-weight: 400;
-}
-
-header {
+.navbar {
   background-color: $primary-color;
   display: flex;
   align-items: center;
@@ -33,16 +29,16 @@ header {
   height: 90px;
   border-bottom-left-radius: 100px;
 
-  .topnav__list {
+  .navbar-list {
     list-style-type: none;
 
-    .topnav__item {
+    .navbar-item {
       display: inline-block;
       text-align: center;
       margin-right: 40px;
       line-height: 40px;
 
-      .topnav__link {
+      .navbar-link {
         color: $secondary-color;
         font-family: 'Raleway', sans-serif;
         font-size: 1.3em;
@@ -52,41 +48,192 @@ header {
   }
 }
 
-.topnav__item:hover {
+.navbar-item:hover {
   // border-radius: 10px;
   border-bottom: 2px solid white;
   transition: 20ms;
 }
 
-#active__item {
+#active-item {
   // background-color: white;
   border-bottom: 2px solid $secondary-color;
   // border-radius: 10px;
 
-  #active__link {
+  #active-link {
     color: white;
   }
 }
 
-// .diagonal-box {
-//   background-image: linear-gradient(45deg, #4f5d75, #bfc0c0);
-//   transform: skewY(-8deg);
-//   margin-top: 500px;
-//   padding: 170px;
-// }
-
-.content {
+.home-content {
   font-family: 'Raleway', sans-serif;
   max-width: 70em;
   margin: 0 auto;
+
+  .home-h1 {
+    font-size: 6em;
+    color: $secondary-color;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: $primary-color;
+    margin-bottom: 20px;
+  }
+
+  .home-h3 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .home-paragraph {
+    font-size: 1.2em;
+    width: 75%;
+  }
+
 }
 
-#home-heading {
-  font-size: 6em;
-  color: $secondary-color;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: $primary-color;
-  margin-bottom: 20px;
+.profile-img {
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-left: 10px;
+  border-radius: 50px;
+  border: 1px solid $primary-color;
+
+}
+
+.diagonal-box {
+  font: 1.2em $primary-font;
+  text-align: left;
+  background: #dbdada;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  position: relative;
+  height: 20rem;
+  top: 100px;
+  padding: 10px 100px;
+
+  .home-h3 {
+    text-align: center;
+    font-size: 1.7em;
+  }
+
+  .skills {
+    width: 70px;
+    height: 70px;
+    // display: flex;
+    // justify-content: space-evenly;
+    margin: 100px auto;
+
+  }
+
+  .tech-icons {
+    height: 100px;
+    width: 100px;
+    margin-left: -10px;
+    padding: 50px 0px 0 130px;
+  }
+}
+
+.education {
+  font: 1.2em $primary-font;
+  text-align: left;
+  background: white;
+  position: relative;
+  height: 20rem;
+  top: 120px;
+  padding: 10px 100px;
+
+  .home-h3 {
+    text-align: center;
+    font-size: 1.7em;
+  }
+
+}
+
+.education-content {
+  display: flex;
+  justify-content: space-evenly;
+
+  .coder {
+    width: auto;
+    height: 200px;
+    transform: scale(0.6);
+  }
+
+  .usyd {
+    padding-left: 100px;
+    width: auto;
+    height: 200px;
+    transform: scale(0.9);
+  }
+
+  .sae {
+    width: auto;
+    height: 200px;
+    transform: scale(0.6);
+    align-items: center;
+  }
+
+  p {
+    padding-top: 20px;
+    line-height: 1.5em;
+  }
+
+}
+
+.footer {
+  font: 1.2em $primary-font;
+  text-align: left;
+  background: $primary-color;
+  border-top-right-radius: 100px;
+  position: relative;
+  height: 5rem;
+  top: 200px;
+  padding: 10px 100px;
+
+  p {
+    font-size: 1.1em;
+    color: $secondary-color;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .navbar {
+    border-bottom-left-radius: 40px;
+    height: 70px;
+    
+    .navbar-list {
+
+      
+      .navbar-item {
+        margin-right: 20px;
+        line-height: 40px;
+
+        .navbar-links {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+
+  .home-h1 {
+    text-align: center;
+  }
+  
+  .home-h3 {
+    text-align: left;
+    margin: 0 30px;
+    font-size: 1.7em;
+  }
+
+  .home-paragraph {
+    font-size: 1.2em;
+  }
+
 }
 
 
