@@ -63,26 +63,27 @@ a:-webkit-any-link {
   float: right;
   margin-left: 10px;
   border-radius: 50px;
-  border: 1px solid #2d3142; }
+  border: 2px solid #2d3142; }
 
-.diagonal-box {
+.skills-container {
   font: 1.2em "Raleway", sans-serif;
   text-align: left;
   background: #dbdada;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   position: relative;
-  height: 20rem;
+  height: 22rem;
   top: 100px;
   padding: 10px 100px; }
-  .diagonal-box .home-h3 {
+  .skills-container .home-h3 {
     text-align: center;
-    font-size: 1.7em; }
-  .diagonal-box .skills {
+    font-size: 1.7em;
+    padding-top: 20px; }
+  .skills-container .skills {
     width: 70px;
     height: 70px;
     margin: 100px auto; }
-  .diagonal-box .tech-icons {
+  .skills-container .tech-icons {
     height: 100px;
     width: 100px;
     margin-left: -10px;
@@ -111,14 +112,9 @@ a:-webkit-any-link {
     padding-left: 100px;
     width: auto;
     height: 200px;
-    transform: scale(0.9); }
-  .education-content .sae {
-    width: auto;
-    height: 200px;
-    transform: scale(0.6);
-    align-items: center; }
+    transform: scale(0.8); }
   .education-content p {
-    padding-top: 20px;
+    padding-top: 12px;
     line-height: 1.5em; }
 
 .footer {
