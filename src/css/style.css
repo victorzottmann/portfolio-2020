@@ -130,25 +130,4 @@ a:-webkit-any-link {
     text-align: center;
     margin-top: 30px; }
 
-@media screen and (max-width: 640px) {
-  .navbar {
-    border-bottom-left-radius: 40px;
-    height: 70px; }
-    .navbar .navbar-list .navbar-item {
-      margin-right: 20px;
-      line-height: 40px; }
-      .navbar .navbar-list .navbar-item .navbar-links {
-        font-size: 1.1em; }
-
-  .home-h1 {
-    text-align: center; }
-
-  .home-h3 {
-    text-align: left;
-    margin: 0 30px;
-    font-size: 1.7em; }
-
-  .home-paragraph {
-    font-size: 1.2em; } }
-
 /*# sourceMappingURL=style.css.map */
