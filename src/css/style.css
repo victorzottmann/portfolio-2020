@@ -39,30 +39,31 @@ a:-webkit-any-link {
   #active-item #active-link {
     color: white; }
 
-.home-content {
+.home-container {
   font-family: 'Raleway', sans-serif;
-  max-width: 70em;
-  margin: 0 auto; }
-  .home-content .profile-picture {
-    width: auto;
-    height: 300px;
-    float: right;
-    border-radius: 50px;
-    border: 2px solid #2d3142; }
-  .home-content .home-h1 {
+  margin: 0 150px;
+  display: flex; }
+  .home-container .intro-text .home-h1 {
     font-size: 6em;
     color: #EF8354;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #2d3142;
     margin-bottom: 20px; }
-  .home-content .home-h3 {
+  .home-container .intro-text .home-h3 {
     margin-top: 0;
     font-size: 2em;
     font-weight: 400; }
-  .home-content .home-paragraph {
+  .home-container .intro-text .home-paragraph {
     font-size: 1.2em;
     line-height: 1.5em;
-    width: 75%; }
+    width: 100%; }
+  .home-container .profile-picture {
+    width: auto;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    border: 2px solid #2d3142;
+    border-radius: 50px; }
 
 .skills-container {
   font: 1.2em "Raleway", sans-serif;
@@ -88,7 +89,7 @@ a:-webkit-any-link {
     margin-left: -10px;
     padding: 50px 0px 0 130px; }
 
-.education {
+.education-container {
   font: 1.2em "Raleway", sans-serif;
   text-align: left;
   background: white;
@@ -96,23 +97,25 @@ a:-webkit-any-link {
   height: 20rem;
   top: 120px;
   padding: 10px 100px; }
-  .education .home-h3 {
+  .education-container .home-h3 {
+    margin-top: 20px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 1.7em; }
-  .education .education-content {
+  .education-container .schools {
     display: flex;
-    justify-content: space-evenly; }
-    .education .education-content .coder {
+    justify-content: space-between; }
+    .education-container .schools .coder-container .coder-img {
       width: auto;
       height: 200px;
-      transform: scale(0.6); }
-    .education .education-content .usyd {
-      padding-left: 100px;
+      transform: scale(0.65); }
+    .education-container .schools .usyd-container .usyd-img {
       width: auto;
       height: 200px;
-      transform: scale(0.8); }
-    .education .education-content p {
+      transform: scale(0.85); }
+    .education-container .schools p {
       padding-top: 12px;
+      float: right;
       line-height: 1.5em; }
 
 .footer {
@@ -122,7 +125,7 @@ a:-webkit-any-link {
   border-top-right-radius: 100px;
   position: relative;
   height: 5rem;
-  top: 200px;
+  top: 170px;
   padding: 10px 100px; }
   .footer p {
     font-size: 1.1em;
@@ -130,25 +133,76 @@ a:-webkit-any-link {
     text-align: center;
     margin-top: 30px; }
 
-@media screen and (max-width: 640px) {
-  .navbar {
-    border-bottom-left-radius: 40px;
-    height: 70px; }
-    .navbar .navbar-list .navbar-item {
-      margin-right: 20px;
-      line-height: 40px; }
-      .navbar .navbar-list .navbar-item .navbar-links {
-        font-size: 1.1em; }
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .home-container {
+    display: flex;
+    margin: 0 65px; }
+    .home-container .intro-text .home-h1 {
+      font-size: 6em;
+      color: #EF8354;
+      -webkit-text-stroke-width: 0.1px;
+      -webkit-text-stroke-color: #2d3142;
+      margin-bottom: 20px; }
+    .home-container .intro-text .home-h3 {
+      margin-top: 0;
+      font-size: 2em;
+      font-weight: 400; }
+    .home-container .intro-text .home-paragraph {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      width: 100%; }
+    .home-container .profile-picture {
+      width: auto;
+      height: 250px; }
 
-  .home-h1 {
-    text-align: center; }
-
-  .home-h3 {
+  .skills-container {
     text-align: left;
-    margin: 0 30px;
-    font-size: 1.7em; }
+    background: #dbdada;
+    position: relative;
+    top: 80px;
+    height: 20rem;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px; }
+    .skills-container .skills {
+      margin: 0 40px; }
+    .skills-container .tech-icons {
+      width: 85px;
+      height: 85px;
+      padding: 50px 0px 0 40px; }
 
-  .home-paragraph {
-    font-size: 1.2em; } }
+  .education-container {
+    display: inline; }
+    .education-container .home-h3 {
+      margin-top: 0; }
+    .education-container .schools {
+      margin: 0 30px;
+      display: block; }
+      .education-container .schools .coder-container .coder-img {
+        width: auto;
+        height: 140px;
+        margin-left: 226px; }
+      .education-container .schools .coder-container p {
+        font-size: 0.9em;
+        line-height: 1.5em;
+        position: relative;
+        bottom: 8px;
+        margin-right: 196px; }
+      .education-container .schools .usyd-container {
+        margin-top: 40px; }
+        .education-container .schools .usyd-container .usyd-img {
+          width: auto;
+          height: 140px;
+          margin-left: 228px; }
+        .education-container .schools .usyd-container p {
+          font-size: 0.9em;
+          line-height: 1.5em;
+          margin-right: 40px; }
+
+  .footer {
+    height: 3.5rem;
+    position: relative;
+    top: 200px; }
+    .footer p {
+      margin-top: 17px; } }
 
 /*# sourceMappingURL=style.css.map */
