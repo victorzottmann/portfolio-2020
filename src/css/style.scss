@@ -3,6 +3,7 @@
 
 $primary-color: #2d3142;
 $secondary-color: #EF8354;
+$card-color: rgba(79, 93, 117, 1);
 
 $primary-font: 'Raleway', sans-serif;
 
@@ -13,6 +14,8 @@ html {
 body {
   background-color: white;
   margin: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 a:-webkit-any-link {
@@ -194,3 +197,5 @@ a:-webkit-any-link {
   }
 
 }
+
+// ###### BLOG PAGE #####

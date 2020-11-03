@@ -4,7 +4,9 @@ html {
 
 body {
   background-color: white;
-  margin: 0; }
+  margin: 0;
+  width: 100%;
+  height: 100vh; }
 
 a:-webkit-any-link {
   color: black;
