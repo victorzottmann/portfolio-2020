@@ -199,3 +199,150 @@ a:-webkit-any-link {
 }
 
 // ###### BLOG PAGE #####
+
+.blog-page {
+  background-color: #e9e9e9;
+}
+
+.card-container {
+  margin: 0 50px;
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .card {
+    background-color: white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+  }
+  
+  .image-data {
+    height: 10rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  
+    #img-post-1 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+      background-size: cover;
+      z-index: -1;
+      transition: transform 0.5s ease-out;
+    }
+
+    #img-post-2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+      background-size: cover;
+      z-index: -1;
+      transition: transform 0.5s ease-out;
+    }
+
+    #img-post-3 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+      background-size: cover;
+      z-index: -1;
+      transition: transform 0.5s ease-out;
+    }
+  
+  }
+
+}
+
+.card:hover {
+
+  .background-image {
+    transform: scale(1.1);
+  }
+  
+}
+
+.image-layer {
+  width: 100%;
+  height: 100%;
+  // background: rgba(79, 93, 117, 0.3);
+}
+
+.post-data {
+  font-family: $primary-font;
+  text-align: justify;
+  padding: 20px;
+  position: relative;
+
+  .title {
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 40px;
+    margin-top: 0;
+  }
+  
+  .description {
+    position: relative;
+  }
+  
+}
+
+
+.description::first-letter {
+  margin-left: 15px;
+}
+
+.description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 20px;
+  background: $secondary-color;
+  border-radius: 5px;
+}
+
+.cta {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 5px;
+
+  a {
+    background: $secondary-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+  }
+
+  a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: $secondary-color;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+  }
+}
