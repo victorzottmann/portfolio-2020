@@ -62,12 +62,21 @@ a:-webkit-any-link {
   #active-link {
     color: white;
   }
+
 }
 
 .home-content {
   font-family: 'Raleway', sans-serif;
   max-width: 70em;
   margin: 0 auto;
+
+  .profile-picture {
+    width: auto;
+    height: 300px;
+    float: right;
+    border-radius: 50px;
+    border: 2px solid $primary-color;
+  }
 
   .home-h1 {
     font-size: 6em;
@@ -85,35 +94,27 @@ a:-webkit-any-link {
 
   .home-paragraph {
     font-size: 1.2em;
+    line-height: 1.5em;
     width: 75%;
   }
-
+  
 }
 
-.profile-img {
-  width: 300px;
-  height: 300px;
-  float: right;
-  margin-left: 10px;
-  border-radius: 50px;
-  border: 1px solid $primary-color;
-
-}
-
-.diagonal-box {
+.skills-container {
   font: 1.2em $primary-font;
   text-align: left;
   background: #dbdada;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   position: relative;
-  height: 20rem;
-  top: 100px;
+  height: 22rem;
+  top: 80px;
   padding: 10px 100px;
 
   .home-h3 {
     text-align: center;
     font-size: 1.7em;
+    padding-top: 20px;
   }
 
   .skills {
@@ -131,6 +132,7 @@ a:-webkit-any-link {
     margin-left: -10px;
     padding: 50px 0px 0 130px;
   }
+
 }
 
 .education {
@@ -147,38 +149,32 @@ a:-webkit-any-link {
     font-size: 1.7em;
   }
 
-}
-
-.education-content {
-  display: flex;
-  justify-content: space-evenly;
-
-  .coder {
-    width: auto;
-    height: 200px;
-    transform: scale(0.6);
-  }
-
-  .usyd {
-    padding-left: 100px;
-    width: auto;
-    height: 200px;
-    transform: scale(0.9);
-  }
-
-  .sae {
-    width: auto;
-    height: 200px;
-    transform: scale(0.6);
-    align-items: center;
-  }
-
-  p {
-    padding-top: 20px;
-    line-height: 1.5em;
+  .education-content {
+    display: flex;
+    justify-content: space-evenly;
+  
+    .coder {
+      width: auto;
+      height: 200px;
+      transform: scale(0.6);
+    }
+  
+    .usyd {
+      padding-left: 100px;
+      width: auto;
+      height: 200px;
+      transform: scale(0.8);
+    }
+  
+    p {
+      padding-top: 12px;
+      line-height: 1.5em;
+    }
+  
   }
 
 }
+
 
 .footer {
   font: 1.2em $primary-font;
@@ -198,45 +194,3 @@ a:-webkit-any-link {
   }
 
 }
-
-
-@media screen and (max-width: 640px) {
-
-  .navbar {
-    border-bottom-left-radius: 40px;
-    height: 70px;
-    
-    .navbar-list {
-
-      
-      .navbar-item {
-        margin-right: 20px;
-        line-height: 40px;
-
-        .navbar-links {
-          font-size: 1.1em;
-        }
-      }
-    }
-  }
-
-  .home-h1 {
-    text-align: center;
-  }
-  
-  .home-h3 {
-    text-align: left;
-    margin: 0 30px;
-    font-size: 1.7em;
-  }
-
-  .home-paragraph {
-    font-size: 1.2em;
-  }
-
-}
-
-
-
-
-
