@@ -47,7 +47,6 @@ a:-webkit-any-link {
     width: auto;
     height: 300px;
     float: right;
-    margin-left: 10px;
     border-radius: 50px;
     border: 2px solid #2d3142; }
   .home-content .home-h1 {
@@ -62,6 +61,7 @@ a:-webkit-any-link {
     font-weight: 400; }
   .home-content .home-paragraph {
     font-size: 1.2em;
+    line-height: 1.5em;
     width: 75%; }
 
 .skills-container {
@@ -72,7 +72,7 @@ a:-webkit-any-link {
   border-bottom-left-radius: 100px;
   position: relative;
   height: 22rem;
-  top: 100px;
+  top: 80px;
   padding: 10px 100px; }
   .skills-container .home-h3 {
     text-align: center;
@@ -99,22 +99,21 @@ a:-webkit-any-link {
   .education .home-h3 {
     text-align: center;
     font-size: 1.7em; }
-
-.education-content {
-  display: flex;
-  justify-content: space-evenly; }
-  .education-content .coder {
-    width: auto;
-    height: 200px;
-    transform: scale(0.6); }
-  .education-content .usyd {
-    padding-left: 100px;
-    width: auto;
-    height: 200px;
-    transform: scale(0.8); }
-  .education-content p {
-    padding-top: 12px;
-    line-height: 1.5em; }
+  .education .education-content {
+    display: flex;
+    justify-content: space-evenly; }
+    .education .education-content .coder {
+      width: auto;
+      height: 200px;
+      transform: scale(0.6); }
+    .education .education-content .usyd {
+      padding-left: 100px;
+      width: auto;
+      height: 200px;
+      transform: scale(0.8); }
+    .education .education-content p {
+      padding-top: 12px;
+      line-height: 1.5em; }
 
 .footer {
   font: 1.2em "Raleway", sans-serif;

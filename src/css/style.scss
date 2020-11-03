@@ -74,7 +74,6 @@ a:-webkit-any-link {
     width: auto;
     height: 300px;
     float: right;
-    margin-left: 10px;
     border-radius: 50px;
     border: 2px solid $primary-color;
   }
@@ -95,6 +94,7 @@ a:-webkit-any-link {
 
   .home-paragraph {
     font-size: 1.2em;
+    line-height: 1.5em;
     width: 75%;
   }
   
@@ -108,7 +108,7 @@ a:-webkit-any-link {
   border-bottom-left-radius: 100px;
   position: relative;
   height: 22rem;
-  top: 100px;
+  top: 80px;
   padding: 10px 100px;
 
   .home-h3 {
