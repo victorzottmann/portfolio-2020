@@ -62,6 +62,7 @@ a:-webkit-any-link {
   #active-link {
     color: white;
   }
+
 }
 
 .home-content {
@@ -131,6 +132,7 @@ a:-webkit-any-link {
     margin-left: -10px;
     padding: 50px 0px 0 130px;
   }
+
 }
 
 .education {
@@ -147,31 +149,32 @@ a:-webkit-any-link {
     font-size: 1.7em;
   }
 
+  .education-content {
+    display: flex;
+    justify-content: space-evenly;
+  
+    .coder {
+      width: auto;
+      height: 200px;
+      transform: scale(0.6);
+    }
+  
+    .usyd {
+      padding-left: 100px;
+      width: auto;
+      height: 200px;
+      transform: scale(0.8);
+    }
+  
+    p {
+      padding-top: 12px;
+      line-height: 1.5em;
+    }
+  
+  }
+
 }
 
-.education-content {
-  display: flex;
-  justify-content: space-evenly;
-
-  .coder {
-    width: auto;
-    height: 200px;
-    transform: scale(0.6);
-  }
-
-  .usyd {
-    padding-left: 100px;
-    width: auto;
-    height: 200px;
-    transform: scale(0.8);
-  }
-
-  p {
-    padding-top: 12px;
-    line-height: 1.5em;
-  }
-
-}
 
 .footer {
   font: 1.2em $primary-font;
