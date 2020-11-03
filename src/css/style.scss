@@ -69,6 +69,15 @@ a:-webkit-any-link {
   max-width: 70em;
   margin: 0 auto;
 
+  .profile-picture {
+    width: auto;
+    height: 300px;
+    float: right;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 2px solid $primary-color;
+  }
+
   .home-h1 {
     font-size: 6em;
     color: $secondary-color;
@@ -87,17 +96,7 @@ a:-webkit-any-link {
     font-size: 1.2em;
     width: 75%;
   }
-
-}
-
-.profile-img {
-  width: auto;
-  height: 300px;
-  float: right;
-  margin-left: 10px;
-  border-radius: 50px;
-  border: 2px solid $primary-color;
-
+  
 }
 
 .skills-container {

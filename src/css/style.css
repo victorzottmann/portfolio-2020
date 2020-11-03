@@ -43,6 +43,13 @@ a:-webkit-any-link {
   font-family: 'Raleway', sans-serif;
   max-width: 70em;
   margin: 0 auto; }
+  .home-content .profile-picture {
+    width: auto;
+    height: 300px;
+    float: right;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 2px solid #2d3142; }
   .home-content .home-h1 {
     font-size: 6em;
     color: #EF8354;
@@ -56,14 +63,6 @@ a:-webkit-any-link {
   .home-content .home-paragraph {
     font-size: 1.2em;
     width: 75%; }
-
-.profile-img {
-  width: auto;
-  height: 300px;
-  float: right;
-  margin-left: 10px;
-  border-radius: 50px;
-  border: 2px solid #2d3142; }
 
 .skills-container {
   font: 1.2em "Raleway", sans-serif;
