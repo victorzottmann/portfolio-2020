@@ -13,6 +13,8 @@ html {
 body {
   background-color: white;
   margin: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 a:-webkit-any-link {
@@ -69,8 +71,11 @@ a:-webkit-any-link {
   font-family: 'Raleway', sans-serif;
   margin: 0 150px;
   display: flex;
+  // flex-wrap: wrap;
 
   .intro-text {
+    display: flex;
+    flex-direction: column;
     .home-h1 {
       font-size: 6em;
       color: $secondary-color;
@@ -114,6 +119,7 @@ a:-webkit-any-link {
   height: 22rem;
   top: 80px;
   padding: 10px 100px;
+  display: flex;
 
   .home-h3 {
     text-align: center;
@@ -128,10 +134,11 @@ a:-webkit-any-link {
   }
 
   .tech-icons {
+    // display: flex;
     height: 100px;
     width: 100px;
-    margin-left: -10px;
-    padding: 50px 0px 0 130px;
+    // margin-left: -10px;
+    // padding: 50px 0px 0 130px;
   }
 
 }
@@ -206,9 +213,10 @@ a:-webkit-any-link {
 }
 
 // ##### SCREENS FROM 901px AND 1200px #####
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .home-container {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 65px;
 
     .intro-text {
@@ -249,6 +257,7 @@ a:-webkit-any-link {
     height: 20rem;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    display: flex;
     
     .skills {
      margin: 0 40px;
