@@ -8,7 +8,7 @@ $card-color: rgba(79, 93, 117, 1);
 $primary-font: 'Raleway', sans-serif;
 
 html {
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 body {
@@ -200,7 +200,7 @@ a:-webkit-any-link {
 
 // ###### BLOG PAGE #####
 
-.blog-page {
+.blog-page { // <body> tag
   background-color: #e9e9e9;
 }
 
@@ -219,14 +219,16 @@ a:-webkit-any-link {
     flex-direction: column;
     justify-content: center;
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
-  }
-  
-  .image-data {
-    height: 10rem;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  
+
+    .image-data {
+      height: 10rem;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    
+      
+    }
+
     #img-post-1 {
       width: 100%;
       height: 100%;
@@ -262,7 +264,7 @@ a:-webkit-any-link {
       z-index: -1;
       transition: transform 0.5s ease-out;
     }
-  
+
   }
 
 }
@@ -278,7 +280,7 @@ a:-webkit-any-link {
 .image-layer {
   width: 100%;
   height: 100%;
-  // background: rgba(79, 93, 117, 0.3);
+  background: rgba(79, 93, 117, 0.3);
 }
 
 .post-data {
