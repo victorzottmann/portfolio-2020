@@ -8,7 +8,7 @@ $card-color: rgba(79, 93, 117, 1);
 $primary-font: 'Raleway', sans-serif;
 
 html {
-  // box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,6 +23,8 @@ a:-webkit-any-link {
   text-decoration: none;
   cursor: pointer;
 }
+
+// ##### HOME PAGE #####
 
 .navbar {
   background-color: $primary-color;
@@ -178,7 +180,6 @@ a:-webkit-any-link {
 
 }
 
-
 .footer {
   font: 1.2em $primary-font;
   text-align: left;
@@ -198,71 +199,94 @@ a:-webkit-any-link {
 
 }
 
-// ###### BLOG PAGE #####
+// ##### BLOG PAGE #####
+
+@mixin img-post {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
+  transition: transform 0.5s ease-out;
+}
 
 .blog-page { // <body> tag
   background-color: #e9e9e9;
 }
 
+#blog-h1 {
+  font-family: $primary-font;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+}
+
 .card-container {
-  margin: 0 50px;
-  position: relative;
-  top: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  margin: 0 20px;
+ 
   .card {
     background-color: white;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    width: 350px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    
 
-    .image-data {
+    .card-image {
       height: 10rem;
       position: relative;
       z-index: 1;
       overflow: hidden;
     
+      #img-post-1 {
+        @include img-post();
+        background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+
+      }
+  
+      #img-post-2 {
+        @include img-post();
+        background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+      }
+  
+      #img-post-3 {
+        @include img-post();
+        background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+      }
+
+      .layer-effect {
+        width: 100%;
+        height: 100%;
+        background: rgba(79, 93, 117, 0.3);
+      }
+
+    }
+
+    .card-text {
+      font-family: $primary-font;
+      text-align: justify;
+      padding: 20px;
+      position: relative;
+    
+      .card-title {
+        text-align: left;
+        font-size: 1.5em;
+        line-height: 40px;
+        margin-top: 0;
+      }
       
-    }
-
-    #img-post-1 {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
-      background-size: cover;
-      z-index: -1;
-      transition: transform 0.5s ease-out;
-    }
-
-    #img-post-2 {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
-      background-size: cover;
-      z-index: -1;
-      transition: transform 0.5s ease-out;
-    }
-
-    #img-post-3 {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
-      background-size: cover;
-      z-index: -1;
-      transition: transform 0.5s ease-out;
+      .card-description {
+        position: relative;
+      }
+      
     }
 
   }
@@ -277,37 +301,11 @@ a:-webkit-any-link {
   
 }
 
-.image-layer {
-  width: 100%;
-  height: 100%;
-  background: rgba(79, 93, 117, 0.3);
-}
-
-.post-data {
-  font-family: $primary-font;
-  text-align: justify;
-  padding: 20px;
-  position: relative;
-
-  .title {
-    text-align: left;
-    font-size: 1.5em;
-    line-height: 40px;
-    margin-top: 0;
-  }
-  
-  .description {
-    position: relative;
-  }
-  
-}
-
-
-.description::first-letter {
+.card-description::first-letter {
   margin-left: 15px;
 }
 
-.description::before {
+.card-description::before {
   content: '';
   position: absolute;
   top: 0;
@@ -318,7 +316,7 @@ a:-webkit-any-link {
   border-radius: 5px;
 }
 
-.cta {
+.read-more {
   text-align: right;
   font-weight: bold;
   margin-top: 5px;
@@ -347,4 +345,10 @@ a:-webkit-any-link {
   a:hover::before {
     transform: scaleX(1);
   }
+  
 }
+
+.blog-footer {
+  margin-top: -30px;
+}
+

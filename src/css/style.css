@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -188,87 +193,113 @@ a:-webkit-any-link {
   background-color: #e9e9e9;
 }
 
+#blog-h1 {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+}
+
 .card-container {
-  margin: 0 50px;
-  position: relative;
-  top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 50px;
+  margin: 0 20px;
 }
 
 .card-container .card {
   background-color: white;
-  width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 350px;
+  margin-bottom: 25px;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.card-container .card .image-data {
+.card-container .card .card-image {
   height: 10rem;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 
-.card-container .card #img-post-1 {
+.card-container .card .card-image #img-post-1 {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   z-index: -1;
   -webkit-transition: -webkit-transform 0.5s ease-out;
   transition: -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
   transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
 }
 
-.card-container .card #img-post-2 {
+.card-container .card .card-image #img-post-2 {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   z-index: -1;
   -webkit-transition: -webkit-transform 0.5s ease-out;
   transition: -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
   transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
 }
 
-.card-container .card #img-post-3 {
+.card-container .card .card-image #img-post-3 {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   z-index: -1;
   -webkit-transition: -webkit-transform 0.5s ease-out;
   transition: -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
   transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+}
+
+.card-container .card .card-image .layer-effect {
+  width: 100%;
+  height: 100%;
+  background: rgba(79, 93, 117, 0.3);
+}
+
+.card-container .card .card-text {
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  padding: 20px;
+  position: relative;
+}
+
+.card-container .card .card-text .card-title {
+  text-align: left;
+  font-size: 1.5em;
+  line-height: 40px;
+  margin-top: 0;
+}
+
+.card-container .card .card-text .card-description {
+  position: relative;
 }
 
 .card:hover .background-image {
@@ -276,35 +307,11 @@ a:-webkit-any-link {
           transform: scale(1.1);
 }
 
-.image-layer {
-  width: 100%;
-  height: 100%;
-  background: rgba(79, 93, 117, 0.3);
-}
-
-.post-data {
-  font-family: "Raleway", sans-serif;
-  text-align: justify;
-  padding: 20px;
-  position: relative;
-}
-
-.post-data .title {
-  text-align: left;
-  font-size: 1.5em;
-  line-height: 40px;
-  margin-top: 0;
-}
-
-.post-data .description {
-  position: relative;
-}
-
-.description::first-letter {
+.card-description::first-letter {
   margin-left: 15px;
 }
 
-.description::before {
+.card-description::before {
   content: '';
   position: absolute;
   top: 0;
@@ -315,13 +322,13 @@ a:-webkit-any-link {
   border-radius: 5px;
 }
 
-.cta {
+.read-more {
   text-align: right;
   font-weight: bold;
   margin-top: 5px;
 }
 
-.cta a {
+.read-more a {
   background: #EF8354;
   background-clip: text;
   -webkit-background-clip: text;
@@ -329,7 +336,7 @@ a:-webkit-any-link {
   position: relative;
 }
 
-.cta a::before {
+.read-more a::before {
   content: '';
   position: absolute;
   left: 0;
@@ -347,8 +354,12 @@ a:-webkit-any-link {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.cta a:hover::before {
+.read-more a:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.blog-footer {
+  margin-top: -30px;
 }
 /*# sourceMappingURL=style.css.map */
