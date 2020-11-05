@@ -1,133 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-html {
-  box-sizing: border-box; }
+/*
+Error: Invalid CSS after "<<<<<<< HEAD": expected "{", was "}"
+        on line 215 of style.scss
 
-body {
-  background-color: white;
-  margin: 0; }
+210:     align-items: center;
+211:     justify-content: center;
+212:   }
+213: 
+214: <<<<<<< HEAD
+215: }
+216: =======
+217: }
+218: 
+219: @media screen and (max-width: 1200px) {
+220: 
 
-a:-webkit-any-link {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
-
-.navbar {
-  background-color: #2d3142;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 90px;
-  border-bottom-left-radius: 100px; }
-  .navbar .navbar-list {
-    list-style-type: none; }
-    .navbar .navbar-list .navbar-item {
-      display: inline-block;
-      text-align: center;
-      margin-right: 40px;
-      line-height: 40px; }
-      .navbar .navbar-list .navbar-item .navbar-link {
-        color: #EF8354;
-        font-family: 'Raleway', sans-serif;
-        font-size: 1.3em; }
-
-.navbar-item:hover {
-  border-bottom: 2px solid white;
-  transition: 20ms; }
-
-#active-item {
-  border-bottom: 2px solid #EF8354; }
-  #active-item #active-link {
-    color: white; }
-
-.home-content {
-  font-family: 'Raleway', sans-serif;
-  max-width: 70em;
-  margin: 0 auto; }
-  .home-content .profile-picture {
-    width: auto;
-    height: 300px;
-    float: right;
-    border-radius: 50px;
-    border: 2px solid #2d3142; }
-  .home-content .home-h1 {
-    font-size: 6em;
-    color: #EF8354;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #2d3142;
-    margin-bottom: 20px; }
-  .home-content .home-h3 {
-    margin-top: 0;
-    font-size: 2em;
-    font-weight: 400; }
-  .home-content .home-paragraph {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    width: 75%; }
-
-.skills-container {
-  font: 1.2em "Raleway", sans-serif;
-  text-align: left;
-  background: #dbdada;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  position: relative;
-  height: 22rem;
-  top: 80px;
-  padding: 10px 100px; }
-  .skills-container .home-h3 {
-    text-align: center;
-    font-size: 1.7em;
-    padding-top: 20px; }
-  .skills-container .skills {
-    width: 70px;
-    height: 70px;
-    margin: 100px auto; }
-  .skills-container .tech-icons {
-    height: 100px;
-    width: 100px;
-    margin-left: -10px;
-    padding: 50px 0px 0 130px; }
-
-.education {
-  font: 1.2em "Raleway", sans-serif;
-  text-align: left;
-  background: white;
-  position: relative;
-  height: 20rem;
-  top: 120px;
-  padding: 10px 100px; }
-  .education .home-h3 {
-    text-align: center;
-    font-size: 1.7em; }
-  .education .education-content {
-    display: flex;
-    justify-content: space-evenly; }
-    .education .education-content .coder {
-      width: auto;
-      height: 200px;
-      transform: scale(0.6); }
-    .education .education-content .usyd {
-      padding-left: 100px;
-      width: auto;
-      height: 200px;
-      transform: scale(0.8); }
-    .education .education-content p {
-      padding-top: 12px;
-      line-height: 1.5em; }
-
-.footer {
-  font: 1.2em "Raleway", sans-serif;
-  text-align: left;
-  background: #2d3142;
-  border-top-right-radius: 100px;
-  position: relative;
-  height: 5rem;
-  top: 200px;
-  padding: 10px 100px; }
-  .footer p {
-    font-size: 1.1em;
-    color: #EF8354;
-    text-align: center;
-    margin-top: 30px; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:215
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"<<<<<<< HEAD\": expected \"{\", was \"}\"\A         on line 215 of style.scss\A \A 210:     align-items: center;\A 211:     justify-content: center;\A 212:   }\A 213: \A 214: <<<<<<< HEAD\A 215: }\A 216: =======\A 217: }\A 218: \A 219: @media screen and (max-width: 1200px) {\A 220: "; }
