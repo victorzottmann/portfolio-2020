@@ -1,97 +1,153 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 html {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
   background-color: white;
   margin: 0;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+}
 
 a:-webkit-any-link {
   color: black;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .navbar {
   background-color: #2d3142;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 90px;
-  border-bottom-left-radius: 100px; }
-  .navbar .navbar-list {
-    list-style-type: none; }
-    .navbar .navbar-list .navbar-item {
-      display: inline-block;
-      text-align: center;
-      margin-right: 40px;
-      line-height: 40px; }
-      .navbar .navbar-list .navbar-item .navbar-link {
-        color: #EF8354;
-        font-family: 'Raleway', sans-serif;
-        font-size: 1.3em; }
+  border-bottom-left-radius: 100px;
+}
+
+.navbar .navbar-list {
+  list-style-type: none;
+}
+
+.navbar .navbar-list .navbar-item {
+  display: inline-block;
+  text-align: center;
+  margin-right: 40px;
+  line-height: 40px;
+}
+
+.navbar .navbar-list .navbar-item .navbar-link {
+  color: #EF8354;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+}
 
 .navbar-item:hover {
   border-bottom: 2px solid white;
-  transition: 20ms; }
+  -webkit-transition: 20ms;
+  transition: 20ms;
+}
 
 #active-item {
-  border-bottom: 2px solid #EF8354; }
-  #active-item #active-link {
-    color: white; }
+  border-bottom: 2px solid #EF8354;
+}
 
-.home-container {
+#active-item #active-link {
+  color: white;
+}
+
+.intro-container {
   font-family: 'Raleway', sans-serif;
   margin: 0 150px;
-  display: flex; }
-  .home-container .intro-text {
-    display: flex;
-    flex-direction: column; }
-    .home-container .intro-text .home-h1 {
-      font-size: 6em;
-      color: #EF8354;
-      -webkit-text-stroke-width: 0.1px;
-      -webkit-text-stroke-color: #2d3142;
-      margin-bottom: 20px; }
-    .home-container .intro-text .home-h3 {
-      margin-top: 0;
-      font-size: 2em;
-      font-weight: 400; }
-    .home-container .intro-text .home-paragraph {
-      font-size: 1.2em;
-      line-height: 1.5em;
-      width: 100%; }
-  .home-container .profile-picture {
-    width: auto;
-    height: 300px;
-    position: relative;
-    top: 100px;
-    border: 2px solid #2d3142;
-    border-radius: 50px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro-container .intro-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro-container .intro-text .intro-h1 {
+  font-size: 6em;
+  color: #EF8354;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #2d3142;
+  margin-bottom: 20px;
+}
+
+.intro-container .intro-text #intro-h3 {
+  margin-top: 0;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.intro-container .intro-text .intro-paragraph {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  width: 100%;
+}
+
+.intro-container .profile-picture {
+  width: auto;
+  height: 300px;
+  position: relative;
+  top: 100px;
+  border: 2px solid #2d3142;
+  border-radius: 50px;
+  margin-left: 15px;
+}
 
 .skills-container {
-  font: 1.2em "Raleway", sans-serif;
-  text-align: left;
+  font: 1.7em "Raleway", sans-serif;
   background: #dbdada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 80px;
+  height: 22rem;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
-  position: relative;
-  height: 22rem;
-  top: 80px;
-  padding: 10px 100px;
-  display: flex; }
-  .skills-container .home-h3 {
-    text-align: center;
-    font-size: 1.7em;
-    padding-top: 20px; }
-  .skills-container .skills {
-    width: 70px;
-    height: 70px;
-    margin: 100px auto; }
-  .skills-container .tech-icons {
-    height: 100px;
-    width: 100px; }
+}
+
+.skills-container #skills-h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.skills-container .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skills-container .skills .tech-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  height: 110px;
+  margin-top: 40px;
+}
 
 .education-container {
   font: 1.2em "Raleway", sans-serif;
@@ -100,115 +156,291 @@ a:-webkit-any-link {
   position: relative;
   height: 20rem;
   top: 120px;
-  padding: 10px 100px; }
-  .education-container .home-h3 {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 1.7em; }
-  .education-container .schools {
-    display: flex;
-    justify-content: space-between; }
-    .education-container .schools .coder-container .coder-img {
-      width: auto;
-      height: 200px;
-      transform: scale(0.65); }
-    .education-container .schools .usyd-container .usyd-img {
-      width: auto;
-      height: 200px;
-      transform: scale(0.85); }
-    .education-container .schools p {
-      padding-top: 12px;
-      float: right;
-      line-height: 1.5em; }
+}
+
+.education-container #education-h3 {
+  font-size: 1.7em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.education-container .schools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.education-container .schools .coder-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education-container .schools .coder-container .coder-img {
+  width: auto;
+  height: 200px;
+  -webkit-transform: scale(0.55);
+          transform: scale(0.55);
+}
+
+.education-container .schools .coder-container p {
+  padding-top: 12px;
+  line-height: 1.5em;
+}
+
+.education-container .schools .usyd-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education-container .schools .usyd-container .usyd-img {
+  width: auto;
+  height: 200px;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+
+.education-container .schools .usyd-container p {
+  padding-top: 12px;
+  line-height: 1.5em;
+}
 
 .footer {
   font: 1.2em "Raleway", sans-serif;
   text-align: left;
   background: #2d3142;
-  border-top-right-radius: 100px;
   position: relative;
-  height: 5rem;
   top: 170px;
-  padding: 10px 100px; }
-  .footer p {
-    font-size: 1.1em;
-    color: #EF8354;
-    text-align: center;
-    margin-top: 30px; }
+  height: 4em;
+  border-top-right-radius: 100px;
+  padding-top: 16px;
+}
 
-@media screen and (max-width: 800px) {
-  .home-container {
+.footer p {
+  font: 1.1em;
+  color: #EF8354;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-container {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 65px; }
-    .home-container .intro-text .home-h1 {
-      font-size: 6em;
-      color: #EF8354;
-      -webkit-text-stroke-width: 0.1px;
-      -webkit-text-stroke-color: #2d3142;
-      margin-bottom: 20px; }
-    .home-container .intro-text .home-h3 {
-      margin-top: 0;
-      font-size: 2em;
-      font-weight: 400; }
-    .home-container .intro-text .home-paragraph {
-      font-size: 1.2em;
-      line-height: 1.5em;
-      width: 100%; }
-    .home-container .profile-picture {
-      width: auto;
-      height: 250px; }
-
-  .skills-container {
-    text-align: left;
-    background: #dbdada;
-    position: relative;
-    top: 80px;
-    height: 20rem;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    display: flex; }
-    .skills-container .skills {
-      margin: 0 40px; }
-    .skills-container .tech-icons {
-      width: 85px;
-      height: 85px;
-      padding: 50px 0px 0 40px; }
-
-  .education-container {
-    display: inline; }
-    .education-container .home-h3 {
-      margin-top: 0; }
-    .education-container .schools {
-      margin: 0 30px;
-      display: block; }
-      .education-container .schools .coder-container .coder-img {
-        width: auto;
-        height: 140px;
-        margin-left: 226px; }
-      .education-container .schools .coder-container p {
-        font-size: 0.9em;
-        line-height: 1.5em;
-        position: relative;
-        bottom: 8px;
-        margin-right: 196px; }
-      .education-container .schools .usyd-container {
-        margin-top: 40px; }
-        .education-container .schools .usyd-container .usyd-img {
-          width: auto;
-          height: 140px;
-          margin-left: 228px; }
-        .education-container .schools .usyd-container p {
-          font-size: 0.9em;
-          line-height: 1.5em;
-          margin-right: 40px; }
-
+  }
+  .intro-container .profile-picture {
+    display: none;
+  }
+  .skills-container .skills .tech-icons {
+    width: 90px;
+    height: 90px;
+  }
+  .education-container .schools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education-container .schools .coder-container .coder-img {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+  }
+  .education-container .schools .usyd-container .usyd-img {
+    margin-left: 2px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
   .footer {
-    height: 3.5rem;
     position: relative;
-    top: 200px; }
-    .footer p {
-      margin-top: 17px; } }
+    top: 310px;
+  }
+}
 
+@media screen and (max-width: 425px) {
+  .navbar {
+    height: 90px;
+    border-bottom-left-radius: 60px;
+  }
+  .navbar .navbar-list .navbar-item {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  .navbar .navbar-list .navbar-item .navbar-link {
+    font-size: 1.2em;
+  }
+  .intro-container {
+    margin: -20px 50px -20px 50px;
+  }
+  .intro-container .intro-text #intro-h3 {
+    font-size: 1.6em;
+  }
+  .intro-container .intro-text .intro-paragraph {
+    text-align: left;
+  }
+  .intro-container .profile-picture {
+    display: none;
+  }
+  .skills-container {
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    height: 18rem;
+  }
+  .skills-container .skills {
+    margin: 0 10px;
+  }
+  .skills-container .skills .tech-icons {
+    width: 65px;
+    height: 65px;
+  }
+  .education-container #education-h3 {
+    margin-bottom: 10px;
+  }
+  .education-container .schools {
+    margin-left: -30px;
+  }
+  .education-container .schools .coder-container {
+    height: 11rem;
+  }
+  .education-container .schools .coder-container .coder-img {
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+  }
+  .education-container .schools .coder-container p {
+    font-size: 0.8em;
+    margin: 50px 0 0 -30px;
+  }
+  .education-container .schools .usyd-container .usyd-img {
+    margin-left: 2px;
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+  }
+  .education-container .schools .usyd-container p {
+    font-size: 0.8em;
+    margin: 50px 0 0 -30px;
+  }
+  .footer {
+    top: 290px;
+    border-top-right-radius: 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    height: 90px;
+    border-bottom-left-radius: 50px;
+  }
+  .navbar .navbar-list {
+    margin-left: -17px;
+  }
+  .navbar .navbar-list .navbar-item {
+    margin-right: 15px;
+  }
+  .navbar .navbar-list .navbar-item .navbar-link {
+    font-size: 1.1em;
+  }
+  .intro-container {
+    margin: 0 30px -30px 30px;
+  }
+  .intro-container .intro-text .intro-h1 {
+    font-size: 4.5em;
+    margin-top: 50px;
+  }
+  .intro-container .intro-text #intro-h3 {
+    font-size: 1.6em;
+  }
+  .intro-container .intro-text .intro-paragraph {
+    text-align: left;
+  }
+  .intro-container .profile-picture {
+    display: none;
+  }
+  .skills-container {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 18rem;
+  }
+  .skills-container .skills {
+    margin: 0 10px;
+  }
+  .skills-container .skills .tech-icons {
+    width: 50px;
+    height: 50px;
+  }
+  .education-container #education-h3 {
+    margin-bottom: 10px;
+  }
+  .education-container .schools {
+    margin-left: -30px;
+  }
+  .education-container .schools .coder-container {
+    height: 11rem;
+  }
+  .education-container .schools .coder-container .coder-img {
+    margin-left: -5px;
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+  }
+  .education-container .schools .coder-container p {
+    font-size: 0.8em;
+    margin: 50px 0 0 -40px;
+  }
+  .education-container .schools .usyd-container .usyd-img {
+    margin-left: -3px;
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+  }
+  .education-container .schools .usyd-container p {
+    font-size: 0.8em;
+    margin: 50px 0 0 -40px;
+  }
+  .footer {
+    top: 290px;
+    border-top-right-radius: 70px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills-container {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 15rem;
+  }
+  .skills-container .skills {
+    margin: -25px 10px;
+  }
+  .skills-container .skills .tech-icons {
+    width: 45px;
+    height: 45px;
+  }
+  .education-container .schools {
+    margin-left: -45px;
+  }
+  .education-container .schools .coder-container p {
+    margin-left: -50px;
+  }
+  .education-container .schools .usyd-container p {
+    margin-left: -50px;
+  }
+  .footer {
+    font-size: 1.1em;
+    border-top-right-radius: 50px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
