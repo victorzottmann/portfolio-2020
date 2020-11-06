@@ -30,7 +30,7 @@ a:-webkit-any-link {
   background-color: $primary-color;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 90px;
   border-bottom-left-radius: 100px;
 
@@ -49,7 +49,25 @@ a:-webkit-any-link {
         font-size: 1.3em;
         
       }
+
     }
+  }
+
+  .navbar-social {
+
+    .social-media-icons {
+      display: inline;
+      align-items: right;
+      width: 26px;
+      margin-right: 40px;
+      height: 30px;
+      fill: $secondary-color;
+    }
+
+    .social-media-icons:hover {
+      fill: white;
+    }
+
   }
 }
 
@@ -216,137 +234,6 @@ a:-webkit-any-link {
 
 }
 
-
-@media screen and (max-width: 1200px) {
-
-  .intro-container {
-    margin: -20px 75px;
-  }
-
-}
-
-@media screen and (max-width: 950px) {
-  .intro-container {
-
-    .profile-picture {
-      display: none;
-    }
-  }
-}
-
-// ##### MEDIA QUERY UP TO 768px #####
-@media screen and (max-width: 768px) {
-
-
-  
-  .intro-container {
-    font-family: 'Raleway', sans-serif;
-    margin: 0 75px;
-    display: flex;
-  
-    .profile-picture {
-      display: none;
-    }
-    
-  }
-
-  .skills-container {
-    
-    .skills {
-    
-      .tech-icons {
-        width: 90px;
-        height: 90px;
-      }
-    
-    }
-  
-  }
-  
-  .education-container {
-
-    .schools {
-      display: flex;
-      flex-direction: column;
-
-      .coder-container {
-
-        .coder-img {
-          transform: scale(0.45);
-        }
-
-      }
-
-      .usyd-container {
-
-        .usyd-img {
-          margin-left: 2px;
-          transform: scale(0.60);
-        }
-
-      }
-
-    }
-
-  }
-
-  .footer {
-    position: relative;
-    top: 310px;
-  }
-
-}
-
-// ##### MEDIA QUERY UP TO 600px #####
-@media screen and (max-width: 600px) {
-
-  .navbar {
-    border-bottom-left-radius: 70px;
-  }
-
-  .skills-container {
-    height: 20rem;
-    border-top-right-radius: 70px;
-    border-bottom-left-radius: 70px;
-    .skills {
-  
-      .tech-icons {
-        width: 70px;
-        height: 75px;
-      }
-  
-    }
-
-  }
-
-}
-
-// ##### MEDIA QUERY UP TO 425px #####
-@media screen and (max-width: 425px) {
-
-  .navbar {
-    height: 90px;
-    border-bottom-left-radius: 60px;
-  
-    .navbar-list {
-  
-      .navbar-item {
-        display: inline-block;
-        margin-right: 25px;
-        
-  
-        .navbar-link {
-          font-size: 1.2em;
-        }
-
-      }
-
-    }
-
-  }
-
-}
-
 // ##### BLOG PAGE #####
 
 @mixin img-post {
@@ -499,3 +386,219 @@ a:-webkit-any-link {
 .blog-footer {
   margin-top: -30px;
 }
+
+
+// ##### CONTACT PAGE #####
+
+#contact-h3 {
+  font: 1.8em $primary-font;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  position: relative;
+  top: 40px;
+  
+  .contact-description {
+    font: 1.2em $primary-font;
+    width: 35%;
+
+    #contact-image {
+      width: auto;
+      height: 250px;
+      border-radius: 5px;
+      margin: 0 0 30px 65px;
+    }
+
+    p {
+      text-align: justify;
+      margin: 0;
+    }
+
+    .resume-link {
+      float: right;
+      font: 1em $primary-font;
+      text-decoration: none;
+      background-color: white;
+      padding: 10px;
+      margin-top: -10px;
+      border: 2px solid $secondary-color;
+    }
+
+  }
+
+  .contact-form {
+    font-family: $primary-font;
+    display: flex;
+    align-items: center;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    width: 28%; 
+    padding: 14px;
+    margin-right: 24px;
+    
+    input[type=text], select, textarea {
+      box-sizing: border-box; 
+      width: 100%; 
+      padding: 12px;  
+      margin-top: 6px; 
+      margin-bottom: 16px; 
+      border: 1px solid #ccc; 
+      border-radius: 5px; 
+      font-family: $primary-font;
+      font-size: 1.1em;
+    }
+    
+    input[type=submit] {
+      cursor: pointer;
+      background-color: $secondary-color;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 12px 20px;
+      font-family: $primary-font;
+      font-size: 1em;
+      font-weight: 1000;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #d6754b;
+    }
+
+  }
+
+}
+
+
+// ##### MEDIA QUERIES #####
+
+@media screen and (max-width: 1200px) {
+
+  .intro-container {
+    margin: -20px 75px;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  .intro-container {
+
+    .profile-picture {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .intro-container {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 75px;
+    display: flex;
+  
+    .profile-picture {
+      display: none;
+    }
+    
+  }
+
+  .skills-container {
+    
+    .skills {
+    
+      .tech-icons {
+        width: 90px;
+        height: 90px;
+      }
+    
+    }
+  
+  }
+  
+  .education-container {
+
+    .schools {
+      display: flex;
+      flex-direction: column;
+
+      .coder-container {
+
+        .coder-img {
+          transform: scale(0.45);
+        }
+
+      }
+
+      .usyd-container {
+
+        .usyd-img {
+          margin-left: 2px;
+          transform: scale(0.60);
+        }
+
+      }
+
+    }
+
+  }
+
+  .footer {
+    position: relative;
+    top: 310px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .navbar {
+    border-bottom-left-radius: 70px;
+  }
+
+  .skills-container {
+    height: 20rem;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    .skills {
+  
+      .tech-icons {
+        width: 70px;
+        height: 75px;
+      }
+  
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .navbar {
+    height: 90px;
+    border-bottom-left-radius: 60px;
+  
+    .navbar-list {
+  
+      .navbar-item {
+        display: inline-block;
+        margin-right: 25px;
+        
+  
+        .navbar-link {
+          font-size: 1.2em;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
