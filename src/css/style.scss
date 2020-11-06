@@ -3,9 +3,17 @@
 
 $primary-color: #2d3142;
 $secondary-color: #EF8354;
-$card-color: rgba(79, 93, 117, 1);
-
 $primary-font: 'Raleway', sans-serif;
+
+@mixin h3-style() {
+  position: relative;
+  top: 10px;
+  font-family: $primary-font;
+  font-size: 2em;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
 
 html {
   box-sizing: border-box;
@@ -252,6 +260,12 @@ a:-webkit-any-link {
 
 }
 
+// ##### PROJECTS PAGE #####
+
+#projects-h3 {
+  @include h3-style();
+}
+
 // ##### BLOG PAGE #####
 
 @mixin img-post {
@@ -265,18 +279,12 @@ a:-webkit-any-link {
   transition: transform 0.5s ease-out;
 }
 
-.blog-page { // <body> tag
+.blog-page { // <body> tag for Blog page
   background-color: #f2f2f2;
 }
 
 #blog-h3{
-  position: relative;
-  top: 10px;
-  font-family: $primary-font;
-  font-size: 2em;
-  font-weight: 400;
-  color: black;
-  text-align: center;
+  @include h3-style();
 }
 
 .card-container {
@@ -414,11 +422,7 @@ a:-webkit-any-link {
 // ##### CONTACT PAGE #####
 
 #contact-h3 {
-  font: 2em $primary-font;
-  font-weight: 400;
-  text-align: center;
-  position: relative;
-  top: 10px;
+  @include h3-style();
 }
 
 .contact-container {
