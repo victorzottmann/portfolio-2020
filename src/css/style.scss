@@ -34,12 +34,21 @@ a:-webkit-any-link {
 
 // ##### HOME PAGE #####
 
+@mixin social-links {
+  display: inline;
+  align-items: right;
+  width: 26px;
+  margin-right: 40px;
+  height: 30px;
+  fill: $secondary-color;
+}
+
 .navbar {
   background-color: $primary-color;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
+  height: 5.5em;
   border-bottom-left-radius: 100px;
 
   .navbar-list {
@@ -64,12 +73,7 @@ a:-webkit-any-link {
   .navbar-social {
 
     .social-media-icons {
-      display: inline;
-      align-items: right;
-      width: 26px;
-      margin-right: 40px;
-      height: 30px;
-      fill: $secondary-color;
+      @include social-links();
     }
 
     .social-media-icons:hover {
@@ -77,11 +81,12 @@ a:-webkit-any-link {
     }
 
   }
-}
 
-.navbar-item:hover {
-  border-bottom: 2px solid white;
-  transition: 20ms;
+  .navbar-item:hover {
+    border-bottom: 2px solid white;
+    transition: 20ms;
+  }
+
 }
 
 #active-item {
@@ -240,22 +245,37 @@ a:-webkit-any-link {
 }
 
 .footer {
-  font: 1.3em $primary-font;
-  text-align: left;
   background: $primary-color;
   position: relative;
   top: 200px;
-  height: 4em;
+  height: 5em;
   border-top-right-radius: 100px;
   padding-top: 16px;
 
-  p {
-    font: 1.1em;
-    color: $secondary-color;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .footer-text {
+  
+    p {
+      font: 1.3em $primary-font;
+      color: $secondary-color;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+  .social-footer { 
+    display: none;
+
+    .social-media-icons {
+     @include social-links();
+    }
+
+    .social-media-icons:hover {
+      fill: white;
+    }
+
   }
 
 }
@@ -553,10 +573,28 @@ a:-webkit-any-link {
 
 // ##### MEDIA QUERIES #####
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
 
   .intro-container {
     margin: -20px 75px;
+
+    .profile-picture {
+      margin-top: 65px;
+    }
+  }
+
+  .footer {
+
+    padding: 0;
+
+    .footer-text {
+      p {
+        font-size: 1.3em;
+        padding: 30px 0 0 0;
+      }
+
+    }
+
   }
 
 }
@@ -572,11 +610,12 @@ a:-webkit-any-link {
 
 @media screen and (max-width: 768px) {
 
+  .navbar {
+    border-bottom-left-radius: 70px;
+  }
+
   .intro-container {
-    font-family: 'Raleway', sans-serif;
-    margin: 0 75px;
-    display: flex;
-  
+ 
     .profile-picture {
       display: none;
     }
@@ -601,6 +640,7 @@ a:-webkit-any-link {
     .schools {
       display: flex;
       flex-direction: column;
+      margin-left: 20px;
 
       .coder-container {
 
@@ -624,8 +664,14 @@ a:-webkit-any-link {
   }
 
   .footer {
+    border-top-right-radius: 70px;
     position: relative;
-    top: 310px;
+    top: 370px;
+
+    .footer-text {
+      font-size: 1em;
+    }
+
   }
 
 }
@@ -656,6 +702,7 @@ a:-webkit-any-link {
 @media screen and (max-width: 425px) {
 
   .navbar {
+    height: 5.5em;
     height: 90px;
     border-bottom-left-radius: 60px;
   
@@ -674,7 +721,249 @@ a:-webkit-any-link {
 
     }
 
+    .navbar-social { 
+      display: none;
+
+    }
+
   }
+
+  .intro-container {
+    margin: -35px 40px;
+
+    .intro-text {
+
+      #intro-h3 {
+        text-align: left;
+      }
+
+    }
+
+  }
+
+  .skills-container {
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+
+    .skills {
+      transform: scale(0.95);
+    }
+
+  }
+
+  .education-container {
+    margin-bottom: -60px;
+
+    .schools {
+      margin: 0 -30px;
+
+      .coder-container {
+        align-items: center;
+        margin: -10px 0 -20px 0;
+
+        .coder-img {
+          transform: scale(0.4);
+        }
+
+        p {
+          margin-left: -30px;
+          font-size: 0.8em;
+        }
+
+      }
+      .usyd-container {
+        align-items: center;
+
+        .usyd-img {
+          transform: scale(0.5);
+        }
+
+        p {
+          margin-left: -30px;
+          font-size: 0.8em;
+        }
+
+      }
+
+    }
+
+  }
+
+  .footer {
+    height: 5.5em;
+    border-top-right-radius: 60px;
+
+    .social-footer {
+      margin: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .social-media-icons {
+        margin: 22px 0 0 0;
+      }
+
+    }
+    
+    .footer-text {
+
+      p {
+        margin-top: 6px;
+        padding: 0;
+        font-size: 0.7em;
+
+      }
+      
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .navbar {
+    border-bottom-left-radius: 50px;
+  
+    .navbar-list {
+      margin-left: 25px;
+      padding: 0;
+
+      .navbar-item {
+        margin-right: 20px;
+      }
+
+    }
+
+    .navbar-social { 
+      display: none;
+
+    }
+
+  }
+
+  .intro-container {
+    margin: -35px 30px;
+  }
+
+  .skills-container {
+    height: 11em;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    .skills {
+
+      .tech-icons {
+        width: 55px;
+        height: 55px;
+      }
+
+    }
+
+  }
+
+  .education-container {
+    margin-bottom: -100px;
+
+    #education-h3 {
+      margin: 20px 0 10px;
+    }
+
+    .schools {
+      margin-left: -50px;
+
+      .coder-container {
+        margin-bottom: -20px;
+        transform: scale(0.85);
+      }
+
+      .usyd-container {
+       transform: scale(0.85);
+      }
+
+    }
+
+  }
+
+  .footer {
+    border-top-right-radius: 50px;
+  } 
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .navbar {
+    border-bottom-left-radius: 30px;
+  
+    .navbar-list {
+      margin-left: 12px;
+     
+      .navbar-item {
+        margin-right: 11px;
+      }
+
+    }
+
+    .navbar-social { 
+      display: none;
+
+    }
+
+  }
+
+  .intro-container {
+    margin: -35px 15px;
+  }
+
+  .skills-container {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .education-container {
+
+ 
+    .schools {
+      
+      .coder-container {
+        margin-left: -20px;
+       
+        .coder-img {
+          transform: scale(0.3);
+        }
+
+        p {
+          transform: scale(1.1);
+        }
+
+      }
+
+      .usyd-container {
+        margin-left: -20px;
+
+        .usyd-img {
+          transform: scale(0.4);
+        }
+
+        p {
+          transform: scale(1.1);
+        }
+
+      }
+
+    }
+
+  }
+
+  .footer {
+    border-top-right-radius: 30px;
+
+    .social-footer {
+      justify-content: space-around;
+    }
+
+  } 
 
 }
 
