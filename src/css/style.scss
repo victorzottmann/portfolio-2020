@@ -128,8 +128,8 @@ a:-webkit-any-link {
       background-color: #4f5d75;
       border: 2px solid #4f5d75;
       border-radius: 10px;
-      width: 100px;
-      padding: 10px 10px;
+      width: 180px;
+      padding: 8px 10px;
       font-size: 1.3em;
       font-weight: 500;
       color: white ; // #d6754b
@@ -146,7 +146,7 @@ a:-webkit-any-link {
     width: auto;
     height: 300px;
     position: relative;
-    top: 176px;
+    top: 180px;
     border: 2px solid $primary-color;
     border-radius: 50px;
     margin-left: 50px;
@@ -160,14 +160,14 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 80px;
-  height: 22rem;
+  top: 100px;
+  height: 23rem;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
 
   #skills-h3 {
     text-align: center;
-    padding-top: 20px;
+    margin-top: 70px;
   }
   
   .skills {
@@ -191,17 +191,17 @@ a:-webkit-any-link {
   background: white;
   position: relative;
   height: 20rem;
-  top: 120px;
+  top: 130px;
 
   #education-h3 {
     font-size: 1.7em;
     text-align: center;
-    margin-top: 20px;
   }
 
   .schools {
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
   
     .coder-container {
       display: flex;
@@ -240,11 +240,11 @@ a:-webkit-any-link {
 }
 
 .footer {
-  font: 1.2em $primary-font;
+  font: 1.3em $primary-font;
   text-align: left;
   background: $primary-color;
   position: relative;
-  top: 170px;
+  top: 200px;
   height: 4em;
   border-top-right-radius: 100px;
   padding-top: 16px;
@@ -264,6 +264,54 @@ a:-webkit-any-link {
 
 #projects-h3 {
   @include h3-style();
+}
+
+.project-container {
+  position: relative;
+  top: 40px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-evenly;
+
+  .project-image {
+    width: auto;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  .project-description {
+
+    h3 {
+      text-align: center;
+      font: 1.8em $primary-font;
+      margin: 0;
+    }
+
+    p {
+      font: 1.2em $primary-font;
+      line-height: 1.5em;
+      width: 700px;
+      text-align: justify;
+    }
+
+  }
+
+}
+
+#project-1, #project-3 {
+  background-color: #dbdada;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 60px 0;
+}
+
+#project-4 {
+  margin-bottom: 0;
+}
+
+#projects-footer {
+  margin-top: -65px;
 }
 
 // ##### BLOG PAGE #####
