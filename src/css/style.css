@@ -7,8 +7,6 @@ html {
 body {
   background-color: white;
   margin: 0;
-  width: 100%;
-  height: 100vh;
 }
 
 a:-webkit-any-link {
@@ -65,13 +63,13 @@ a:-webkit-any-link {
 }
 
 .navbar .navbar-item:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   -webkit-transition: 20ms;
   transition: 20ms;
 }
 
 #active-item {
-  border-bottom: 2px solid #EF8354;
+  border-bottom: 1px solid #EF8354;
 }
 
 #active-item #active-link {
@@ -138,7 +136,7 @@ a:-webkit-any-link {
   width: auto;
   height: 300px;
   position: relative;
-  top: 180px;
+  top: 185px;
   border: 2px solid #2d3142;
   border-radius: 50px;
   margin-left: 50px;
@@ -342,7 +340,7 @@ a:-webkit-any-link {
   margin-top: -65px;
 }
 
-.blog-page {
+.blog-bg {
   background-color: #f2f2f2;
 }
 
@@ -360,18 +358,18 @@ a:-webkit-any-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
   position: relative;
   top: 30px;
-  margin: 0 20px;
+  margin: 0 20px -60px 20px;
 }
 
 .card-container .card {
@@ -506,19 +504,15 @@ a:-webkit-any-link {
           transform: scaleX(0);
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .read-more a:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-}
-
-.blog-footer {
-  margin-top: -35px;
 }
 
 #contact-h3 {
@@ -554,6 +548,7 @@ a:-webkit-any-link {
 .contact-container .contact-description #contact-image {
   width: auto;
   height: 250px;
+  border: 1px solid #2d3142;
   border-radius: 5px;
   margin: 0 0 30px 65px;
 }
@@ -582,6 +577,7 @@ a:-webkit-any-link {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f2f2f2;
+  border: 1px solid #2d3142;
   border-radius: 5px;
   width: 28%;
   padding: 14px;
@@ -614,6 +610,130 @@ a:-webkit-any-link {
 
 .contact-container .contact-form input[type=submit]:hover {
   background-color: #d7754b;
+}
+
+.post-page-bg {
+  background-color: #f2f2f2;
+}
+
+.blog-post .post-container {
+  background-color: white;
+  border-radius: 15px;
+  margin: 70px 200px 0 200px;
+  height: 168vh;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  overflow-y: hidden;
+}
+
+.blog-post .post-container .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  top: 30px;
+  width: 35%;
+  margin-left: 30px;
+}
+
+.blog-post .post-container .author #author-image {
+  width: auto;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.blog-post .post-container .author p {
+  font: 1.1em "Raleway", sans-serif;
+}
+
+.blog-post .post-container .post-heading {
+  position: relative;
+  top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.blog-post .post-container .post-heading h1 {
+  font: 3em "Raleway", sans-serif;
+  margin-bottom: 0;
+}
+
+.blog-post .post-container .post-content {
+  position: relative;
+  top: 80px;
+  margin: 0 50px;
+  font: 1.2em "Raleway", sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.blog-post .post-container .post-content #post-1-img {
+  shape-outside: margin-box;
+  border-radius: 15px;
+  float: right;
+  width: auto;
+  height: 300px;
+  margin: 0 0 30px 30px;
+}
+
+.blog-post .post-container .post-content .post-paragraph::first-letter {
+  margin-left: 30px;
+}
+
+.blog-post .post-container .initial-next-container, .blog-post .post-container .next-previous {
+  position: relative;
+  top: 100px;
+  margin: 0 50px;
+  border-top: 1px solid gray;
+}
+
+.blog-post .post-container .initial-next-container .initial-next-button, .blog-post .post-container .next-previous .initial-next-button, .blog-post .post-container .next-previous .next, .blog-post .post-container .next-previous .previous {
+  float: right;
+  background-color: #4f5d75;
+  border: 2px solid #4f5d75;
+  font: 1.3em "Raleway", sans-serif;
+  color: white;
+  text-align: center;
+  border: 1px solid #2d3142;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding: 5px 10px;
+  width: 60px;
+}
+
+.blog-post .post-container .initial-next-container .initial-next-button:hover, .blog-post .post-container .next-previous .initial-next-button:hover, .blog-post .post-container .next-previous .next:hover, .blog-post .post-container .next-previous .previous:hover {
+  color: black;
+  background-color: #EF8354;
+}
+
+.blog-post .post-container .next-previous {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-post .post-container .next-previous .previous {
+  width: 100px;
+}
+
+#blog-post-footer {
+  margin-top: -130px;
 }
 
 @media screen and (max-width: 1024px) {
