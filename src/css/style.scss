@@ -649,38 +649,33 @@ a:-webkit-any-link {
 
 .contact-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: top;
   justify-content: space-evenly;
   position: relative;
   top: 40px;
   
   .contact-description {
+    flex-direction: column;
+    justify-content: center;
     font: 1.2em $primary-font;
     line-height: 1.5;
-    width: 35%;
 
     #contact-image {
+      position: relative;
+      left: 65px;
       width: auto;
       height: 250px;
       border: 1px solid $primary-color;
       border-radius: 5px;
-      margin: 0 0 30px 65px;
+      margin: 0 0 30px 0px;
       
     }
 
     p {
+      width: 500px;
       text-align: justify;
       margin: 0;
-    }
-
-    .resume-link {
-      float: right;
-      font: 1em $primary-font;
-      text-decoration: none;
-      background-color: white;
-      padding: 10px;
-      margin-top: -10px;
-      border: 2px solid $secondary-color;
     }
 
   }
@@ -688,6 +683,7 @@ a:-webkit-any-link {
   .contact-form {
     font-family: $primary-font;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #f2f2f2;
     border: 1px solid $primary-color;
@@ -750,6 +746,54 @@ a:-webkit-any-link {
         padding: 30px 0 0 0;
       }
 
+    }
+
+  }
+
+  .project-container {
+  
+    .project-image {
+      height: 250px;
+    }
+  
+    .project-description {
+  
+      p {
+        width: 500px;
+      }
+  
+    }
+  
+  }
+  
+  #project-1, #project-3 {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  
+  #project-4 {
+    margin-bottom: 0;
+  }
+  
+  #projects-footer {
+    margin-top: -100px;
+  }
+
+  .contact-container {
+    justify-content: space-evenly;
+    
+    .contact-description { 
+      
+      #contact-image {
+        margin: 0 0 30px 0;
+      }
+  
+    }
+  
+    .contact-form {
+      margin-right: 0;
+      width: 350px;
+  
     }
 
   }
@@ -827,6 +871,69 @@ a:-webkit-any-link {
 
     .footer-text {
       font-size: 1em;
+    }
+
+  }
+
+  .project-container {
+  
+    .project-image {
+      position: relative;
+      top: 100px;
+      height: 200px;
+    }
+  
+    .project-description {
+  
+      p {
+        width: 400px;
+      }
+  
+    }
+  
+  }
+  
+  #project-1, #project-3 {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  
+  #project-4 {
+    margin-bottom: 0;
+  }
+  
+  #projects-footer {
+    margin-top: -280px;
+  }
+
+  .card-container {
+
+    transform: scale(1.2);
+
+    #first-card {
+      margin-top: 270px;
+    }
+
+    #last-card {
+      margin-bottom: 100px;
+    }
+
+  }
+
+  .contact-container {
+    
+    
+    .contact-description { 
+      
+      #contact-image {
+        margin: 0 0 30px 0; 
+      }
+  
+    }
+  
+    .contact-form {
+      width: 470px;
+      margin-bottom: -250px;
     }
 
   }
@@ -974,6 +1081,83 @@ a:-webkit-any-link {
 
   }
 
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  
+    .project-image {
+      position: relative;
+      top: -40px;
+      height: 300px;
+      transform: scale(0.7);
+    }
+  
+    .project-description {
+      position: relative;
+      top: -30px;
+  
+      p {
+        width: 370px;
+      }
+  
+    }
+  
+  }
+  
+  #project-1, #project-3 {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  #project-2, #project-4 {
+    margin-bottom: -30px;
+  }
+  
+  #projects-footer {
+    margin-top: -350px;
+  }
+  
+  .card-container {
+    margin-bottom: -260px;
+  }
+
+  .card-container {
+
+    transform: scale(1.1);
+
+    #first-card {
+      margin-top: 150px;
+    }
+
+    #last-card {
+      margin-bottom: 150px;
+    }
+
+  }
+
+  .contact-container {
+    
+    .contact-description { 
+      
+      #contact-image {
+        transform: scale(0.9);
+        margin: -20px 0 20px -62px; 
+      }
+
+      p {
+        width: 380px;
+        margin-bottom: -10px;
+      }
+  
+    }
+  
+    .contact-form {
+      width: 350px;
+      margin-bottom: -250px;
+    }
+
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -1045,6 +1229,76 @@ a:-webkit-any-link {
     border-top-right-radius: 50px;
   } 
 
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  
+    .project-description {
+ 
+      p {
+        width: 330px;
+      }
+  
+    }
+  
+  }
+
+  #project-2, #project-4 {
+    flex-direction: column-reverse;
+
+    .project-description {
+      margin-top: -40px;
+      margin-bottom: 40px;
+    }
+    
+    .project-image {
+      position: relative;
+      top: -80px;
+    }
+
+  }
+  
+  #projects-footer {
+    margin-top: -360px;
+  }
+
+  .card-container {
+
+    transform: scale(1);
+
+    #first-card {
+      margin-top: -5px;
+    }
+
+    #last-card {
+      margin-bottom: -5px;
+    }
+
+  }
+
+  .contact-container {
+    
+    .contact-description { 
+
+      #contact-image {
+        transform: scale(0.85);
+        margin: -20px 0 20px -83px; 
+      }
+
+      p {
+        width: 340px;
+        margin-bottom: -10px;
+      }
+  
+    }
+  
+    .contact-form {
+      width: 310px;
+      margin-bottom: -250px;
+    }
+
+  }
+  
 }
 
 @media screen and (max-width: 320px) {
@@ -1120,6 +1374,81 @@ a:-webkit-any-link {
     }
 
   } 
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+
+    .project-image {
+      margin-top: -30px;
+      transform: scale(0.65);
+    }
+  
+    .project-description {
+      
+      p {
+        width: 300px;
+      }
+  
+    }
+  
+  }
+
+  #project-2, #project-4 {
+    flex-direction: column-reverse;
+
+    .project-description {
+      position: relative;
+      top: -30px;
+    }
+    
+    .project-image {
+      position: relative;
+      top: -60px;
+    }
+
+  }
+  
+  #projects-footer {
+    margin-top: -360px;
+  }
+
+  .card-container {
+    transform: scale(0.87);
+
+    #first-card {
+      
+      margin-top: -190px;
+    }
+
+    #last-card {
+      margin-bottom: -200px;
+    }
+
+  }
+
+  .contact-container {
+    
+    .contact-description { 
+
+      #contact-image {
+        transform: scale(0.75);
+        margin: -40px 0 0 -105px; 
+      }
+
+      p {
+        width: 295px;
+        margin-bottom: -10px;
+      }
+  
+    }
+  
+    .contact-form {
+      width: 270px;
+      margin-bottom: -250px;
+    }
+
+  }
 
 }
 
