@@ -4,6 +4,7 @@
 $primary-color: #2d3142;
 $secondary-color: #EF8354;
 $button-color: #4f5d75;
+$button-hover-color: #424e63;
 $primary-font: 'Raleway', sans-serif;
 
 @mixin h3-style() {
@@ -94,14 +95,14 @@ a:-webkit-any-link {
   }
 
   .navbar-item:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     transition: 20ms;
   }
 
 }
 
 #active-item {
-  border-bottom: 1px solid $secondary-color;
+  border-bottom: 2px solid $secondary-color;
 
   #active-link {
     color: white;
@@ -139,10 +140,10 @@ a:-webkit-any-link {
       width: 100%;
     }
 
-    .resume-link {
+    .cv-link {
       cursor: pointer;
-      background-color: #4f5d75;
-      border: 2px solid #4f5d75;
+      background-color: $button-color;
+      border: 1px solid $button-color;
       border-radius: 5px;
       width: 180px;
       padding: 8px 10px;
@@ -151,9 +152,8 @@ a:-webkit-any-link {
       color: white ; 
     }
 
-    .resume-link:hover {
-      color: black;
-      background-color: $secondary-color;
+    .cv-link:hover {
+      background-color: $button-hover-color;
     }
 
   }
@@ -289,6 +289,7 @@ a:-webkit-any-link {
 
 }
 
+
 // ##### PROJECTS PAGE #####
 
 #projects-h3 {
@@ -324,6 +325,10 @@ a:-webkit-any-link {
       text-align: justify;
     }
 
+    p::first-letter {
+      margin-left: 30px;
+    }
+
   }
 
 }
@@ -343,7 +348,16 @@ a:-webkit-any-link {
   margin-top: -65px;
 }
 
+
 // ##### BLOG PAGE #####
+
+.blog-bg { // <body> tag for the Blog and Posts pages
+  background-color: #f2f2f2;
+}
+
+#blog-h3{
+  @include h3-style();
+}
 
 @mixin img-post {
   width: 100%;
@@ -354,14 +368,6 @@ a:-webkit-any-link {
   background-size: cover;
   z-index: -1;
   transition: transform 0.5s ease-out;
-}
-
-.blog-bg { // <body> tag for the Blog and Posts pages
-  background-color: #f2f2f2;
-}
-
-#blog-h3{
-  @include h3-style();
 }
 
 .card-container {
@@ -389,24 +395,29 @@ a:-webkit-any-link {
     
       #img-post-1 {
         @include img-post();
-        background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+        background-image: url(../images/blog/books.jpeg);
 
       }
   
       #img-post-2 {
         @include img-post();
-        background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+        background-image: url(../images/blog/keyboard.jpeg);
       }
   
       #img-post-3 {
         @include img-post();
-        background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+        background-image: url(../images/blog/wireframe.jpeg);
       }
 
-      .layer-effect {
-        width: 100%;
-        height: 100%;
-        background: rgba(79, 93, 117, 0.3);
+      #img-post-4 {
+        @include img-post();
+        background-image: url(../images/blog/mixer.jpeg);
+      }
+
+      #img-post-5 {
+        @include img-post();
+        background-image: url(../images/blog/always-open.jpeg);
+        
       }
 
     }
@@ -432,14 +443,6 @@ a:-webkit-any-link {
 
   }
 
-}
-
-.card:hover {
-
-  .background-image {
-    transform: scale(1.1);
-  }
-  
 }
 
 .card-description::first-letter {
@@ -487,6 +490,154 @@ a:-webkit-any-link {
     transform: scaleX(1);
   }
   
+}
+
+
+// ##### BLOG POST PAGES #####
+
+.post-page-bg {
+  background-color: #f2f2f2;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .post-container {
+
+    background-color: white;
+    border-radius: 15px;
+    margin: 70px 200px 0 200px;
+    height: 168vh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    overflow-y: hidden;
+
+    .author {
+      @include flex-center-even();
+      position: relative;
+      top: 30px;
+      width: 35%;
+      margin-left: 30px;
+
+      #author-image {
+        width: auto;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      p {
+        font: 1.1em $primary-font;
+      }
+
+    }
+    
+    .post-heading {
+      position: relative;
+      top: 30px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0 30px;
+
+      h1 {
+        font: 3em $primary-font ;
+        margin-bottom: 0;
+      }
+
+    }
+
+    .post-content {
+      position: relative;
+      top: 80px;
+      margin: 0 50px;
+      font: 1.2em $primary-font;
+      line-height: 1.5;
+      text-align: justify;
+
+      .post-paragraph::first-letter {
+        margin-left: 30px;
+      }
+
+      #post-1-img {
+        shape-outside: margin-box;
+        border-radius: 15px;
+        float: right;
+        width: auto;
+        height: 300px;
+        margin: 0 0 30px 30px;
+      }
+
+      #post-2-img {
+        @extend #post-1-img;
+      }
+
+      #post-3-img {
+        @extend #post-1-img;
+      }
+
+      #post-4-img {
+        @extend #post-1-img;
+        height: 250px;
+      }
+
+      #post-5-img {
+        @extend #post-1-img;
+      }
+
+    }
+
+    .previous-next {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      top: 98px;
+      margin: 0 50px;
+      border-top: 1px solid gray;
+
+      .initial-previous {
+        display: none;
+      }
+
+      .initial-next {
+        position: relative;
+        float: right;
+      }
+  
+      .previous {
+        background-color: $button-color;
+        border: 1px solid $button-color;
+        font: 1.3em $primary-font;
+        color: white;
+        text-align: center;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        margin-top: 40px;
+        padding: 5px 10px;
+        width: 60px;
+        width: 100px;
+      }
+
+      .previous:hover {
+        background-color: $button-hover-color;
+      }
+
+      .next {
+        @extend .previous;
+      }
+
+      .next:hover {
+        @extend .previous:hover
+      }
+
+    }
+    
+  }
+
+}
+
+#blog-post-footer {
+  margin-top: -130px;
 }
 
 
@@ -574,136 +725,6 @@ a:-webkit-any-link {
 
   }
 
-}
-
-// ##### BLOG POST PAGES #####
-
-.post-page-bg {
-  background-color: #f2f2f2;
-}
-
-.blog-post {
-
-  .post-container {
-    background-color: white;
-    border-radius: 15px;
-    margin: 70px 200px 0 200px;
-    height: 168vh;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    overflow-y: hidden;
-
-    .author {
-      @include flex-center-even();
-      position: relative;
-      top: 30px;
-      width: 35%;
-      margin-left: 30px;
-
-      #author-image {
-        width: auto;
-        height: 40px;
-        border-radius: 50%;
-      }
-
-      p {
-        font: 1.1em $primary-font;
-      }
-
-    }
-    
-    .post-heading {
-      position: relative;
-      top: 30px;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin-left: 30px;
-
-      h1 {
-        font: 3em $primary-font ;
-        margin-bottom: 0;
-      }
-
-    }
-
-    .post-content {
-      position: relative;
-      top: 80px;
-      margin: 0 50px;
-      font: 1.2em $primary-font;
-      line-height: 1.5;
-      text-align: justify;
-
-      #post-1-img {
-        shape-outside: margin-box;
-        border-radius: 15px;
-        float: right;
-        width: auto;
-        height: 300px;
-        margin: 0 0 30px 30px;
-      }
-
-      .post-paragraph::first-letter {
-        margin-left: 30px;
-      }
-
-    }
-
-    .initial-next-container {
-      position: relative;
-      top: 100px;
-      margin: 0 50px;
-      border-top: 1px solid gray;
-
-      .initial-next-button {
-        float: right;
-        background-color: $button-color;
-        border: 2px solid $button-color;
-        font: 1.3em $primary-font;
-        color: white;
-        text-align: center;
-        border: 1px solid $primary-color;
-        border-radius: 5px;
-        margin-top: 40px;
-        padding: 5px 10px;
-        width: 60px;
-      }
-
-      .initial-next-button:hover {
-        color: black;
-        background-color: $secondary-color;
-      }
-
-    }
-
-    .next-previous {
-      @extend .initial-next-container;
-      display: flex;
-      justify-content: space-between;
-  
-
-      .next {
-        @extend .initial-next-button;
-      }
-
-      .next:hover {
-        @extend .initial-next-button:hover;
-
-      }
-
-      .previous {
-        @extend .initial-next-button;
-        width: 100px;
-      }
-
-    }
-    
-  }
-
-}
-
-#blog-post-footer {
-  margin-top: -130px;
 }
 
 
@@ -947,7 +968,6 @@ a:-webkit-any-link {
         margin-top: 6px;
         padding: 0;
         font-size: 0.7em;
-
       }
       
     }
