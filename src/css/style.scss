@@ -779,6 +779,14 @@ a:-webkit-any-link {
     margin-top: -100px;
   }
 
+  .card-container {
+
+    #last-card {
+      margin-bottom: -20px;
+    }
+
+  }
+
   .contact-container {
     justify-content: space-evenly;
     
@@ -796,6 +804,70 @@ a:-webkit-any-link {
   
     }
 
+  }
+
+  .blog-post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+    .post-container {
+      position: relative;
+      top: 120px;
+      transform: scale(1.2);
+      height: 185vh;
+  
+      .author {
+        
+        #author-image {
+          transform: scale(0.6);
+        }
+  
+        p {
+          font-size: 0.7em;
+        }
+  
+      }
+      
+      .post-heading {
+  
+        h1 {
+          font-size: 2em;
+        }
+  
+      }
+  
+      .post-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+  
+        #post-1-img {
+          margin: 0;
+          transform: scale(0.8);
+        }
+
+        .post-paragraph {
+          font-size: 0.7em;
+        }
+  
+      }
+  
+      .previous-next {
+    
+        .previous {
+          margin-top: 20px;
+          font-size: 0.9em ;
+        }
+  
+      }
+      
+    }
+  
+  }
+  
+  #blog-post-footer {
+    margin-top: 120px;
   }
 
 }
@@ -938,6 +1010,99 @@ a:-webkit-any-link {
 
   }
 
+  .blog-post {
+  
+    .post-container {
+      position: relative;
+      height: 193vh;
+      right: 89px;
+  
+      .author {
+        
+        #author-image {
+          transform: scale(0.5);
+        }
+  
+        p {
+          font-size: 0.6em;
+        }
+  
+      }
+      
+      .post-heading {
+  
+        h1 {
+          font-size: 1.7em;
+        }
+  
+      }
+  
+      .post-content {
+  
+        #post-1-img {
+          margin: 0;
+          transform: scale(0.8);
+        }
+
+        .post-paragraph {
+          font-size: 0.7em;
+        }
+  
+      }
+  
+      .previous-next {
+    
+        .previous {
+          width: 70px;
+          margin-top: 20px;
+          font-size: 0.9em ;
+        }
+  
+      }
+      
+    }
+  
+  }
+  
+  #blog-post-footer {
+    margin-top: -75px;
+  }
+
+}
+
+@media screen and (max-width: 762px) {
+
+  .navbar-social {
+    display: none;
+  }
+
+  .footer {
+    height: 6em;
+    border-top-right-radius: 60px;
+
+    .social-footer {
+      margin: 0 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .social-media-icons {
+        margin: 22px 0 0 0;
+      }
+
+    }
+    
+    .footer-text {
+
+      p {
+        margin-top: 9px;
+        padding: 0;
+        font-size: 0.7em;
+      }
+      
+    }
+
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1158,6 +1323,67 @@ a:-webkit-any-link {
 
   }
 
+  .blog-post {
+    transform: scale(0.6);
+  
+    .post-container {
+      position: relative;
+      height: 270vh;
+      top: -160px;
+      right: 262px;
+      margin-bottom: -750px;
+  
+      .author {
+        
+        #author-image {
+          transform: scale(0.5);
+        }
+  
+        p {
+          font-size: 0.6em;
+        }
+  
+      }
+      
+      .post-heading {
+  
+        h1 {
+          font-size: 1.7em;
+        }
+  
+      }
+  
+      .post-content {
+  
+        #post-1-img {
+          margin: 0;
+          transform: scale(0.8);
+        }
+
+        .post-paragraph {
+          font-size: 0.9em;
+        }
+  
+      }
+  
+      .previous-next {
+    
+        .previous {
+          width: 70px;
+          margin-top: 20px;
+          font-size: 1em ;
+        }
+  
+      }
+      
+    }
+  
+  }
+
+  #blog-post-footer {
+    margin-top: -70px;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -1297,6 +1523,68 @@ a:-webkit-any-link {
       margin-bottom: -250px;
     }
 
+  }
+
+  .blog-post {
+    transform: scale(0.54);
+  
+    .post-container {
+      position: relative;
+      height: 267vh;
+      top: -270px;
+      right: 287px;
+      margin-bottom: -750px;
+  
+      .author {
+        width: 240px;
+        
+        #author-image {
+          transform: scale(0.6);
+        }
+  
+        p {
+          font-size: 0.7em;
+        }
+  
+      }
+      
+      .post-heading {
+  
+        h1 {
+          font-size: 1.7em;
+        }
+  
+      }
+  
+      .post-content {
+  
+        #post-1-img {
+          margin: 0;
+          transform: scale(0.8);
+        }
+
+        .post-paragraph {
+          font-size: 0.9em;
+        }
+  
+      }
+  
+      .previous-next {
+    
+        .previous {
+          width: 70px;
+          margin-top: 20px;
+          font-size: 1.1em ;
+        }
+  
+      }
+      
+    }
+  
+  }
+
+  #blog-post-footer {
+    margin-top: -218px;
   }
   
 }

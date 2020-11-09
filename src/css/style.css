@@ -808,6 +808,9 @@ a:-webkit-any-link {
   #projects-footer {
     margin-top: -100px;
   }
+  .card-container #last-card {
+    margin-bottom: -20px;
+  }
   .contact-container {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -819,6 +822,59 @@ a:-webkit-any-link {
   .contact-container .contact-form {
     margin-right: 0;
     width: 350px;
+  }
+  .blog-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blog-post .post-container {
+    position: relative;
+    top: 120px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    height: 185vh;
+  }
+  .blog-post .post-container .author #author-image {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .blog-post .post-container .author p {
+    font-size: 0.7em;
+  }
+  .blog-post .post-container .post-heading h1 {
+    font-size: 2em;
+  }
+  .blog-post .post-container .post-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -40px;
+  }
+  .blog-post .post-container .post-content #post-1-img, .blog-post .post-container .post-content #post-2-img, .blog-post .post-container .post-content #post-3-img, .blog-post .post-container .post-content #post-4-img, .blog-post .post-container .post-content #post-5-img {
+    margin: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .blog-post .post-container .post-content .post-paragraph {
+    font-size: 0.7em;
+  }
+  .blog-post .post-container .previous-next .previous, .blog-post .post-container .previous-next .next {
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+  #blog-post-footer {
+    margin-top: 120px;
   }
 }
 
@@ -900,6 +956,67 @@ a:-webkit-any-link {
   .contact-container .contact-form {
     width: 470px;
     margin-bottom: -250px;
+  }
+  .blog-post .post-container {
+    position: relative;
+    height: 193vh;
+    right: 89px;
+  }
+  .blog-post .post-container .author #author-image {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .blog-post .post-container .author p {
+    font-size: 0.6em;
+  }
+  .blog-post .post-container .post-heading h1 {
+    font-size: 1.7em;
+  }
+  .blog-post .post-container .post-content #post-1-img, .blog-post .post-container .post-content #post-2-img, .blog-post .post-container .post-content #post-3-img, .blog-post .post-container .post-content #post-4-img, .blog-post .post-container .post-content #post-5-img {
+    margin: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .blog-post .post-container .post-content .post-paragraph {
+    font-size: 0.7em;
+  }
+  .blog-post .post-container .previous-next .previous, .blog-post .post-container .previous-next .next {
+    width: 70px;
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+  #blog-post-footer {
+    margin-top: -75px;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .navbar-social {
+    display: none;
+  }
+  .footer {
+    height: 6em;
+    border-top-right-radius: 60px;
+  }
+  .footer .social-footer {
+    margin: 0 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer .social-footer .social-media-icons {
+    margin: 22px 0 0 0;
+  }
+  .footer .footer-text p {
+    margin-top: 9px;
+    padding: 0;
+    font-size: 0.7em;
   }
 }
 
@@ -1064,6 +1181,43 @@ a:-webkit-any-link {
     width: 350px;
     margin-bottom: -250px;
   }
+  .blog-post {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .blog-post .post-container {
+    position: relative;
+    height: 270vh;
+    top: -160px;
+    right: 262px;
+    margin-bottom: -750px;
+  }
+  .blog-post .post-container .author #author-image {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .blog-post .post-container .author p {
+    font-size: 0.6em;
+  }
+  .blog-post .post-container .post-heading h1 {
+    font-size: 1.7em;
+  }
+  .blog-post .post-container .post-content #post-1-img, .blog-post .post-container .post-content #post-2-img, .blog-post .post-container .post-content #post-3-img, .blog-post .post-container .post-content #post-4-img, .blog-post .post-container .post-content #post-5-img {
+    margin: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .blog-post .post-container .post-content .post-paragraph {
+    font-size: 0.9em;
+  }
+  .blog-post .post-container .previous-next .previous, .blog-post .post-container .previous-next .next {
+    width: 70px;
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  #blog-post-footer {
+    margin-top: -70px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1164,6 +1318,46 @@ a:-webkit-any-link {
   .contact-container .contact-form {
     width: 310px;
     margin-bottom: -250px;
+  }
+  .blog-post {
+    -webkit-transform: scale(0.54);
+            transform: scale(0.54);
+  }
+  .blog-post .post-container {
+    position: relative;
+    height: 267vh;
+    top: -270px;
+    right: 287px;
+    margin-bottom: -750px;
+  }
+  .blog-post .post-container .author {
+    width: 240px;
+  }
+  .blog-post .post-container .author #author-image {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .blog-post .post-container .author p {
+    font-size: 0.7em;
+  }
+  .blog-post .post-container .post-heading h1 {
+    font-size: 1.7em;
+  }
+  .blog-post .post-container .post-content #post-1-img, .blog-post .post-container .post-content #post-2-img, .blog-post .post-container .post-content #post-3-img, .blog-post .post-container .post-content #post-4-img, .blog-post .post-container .post-content #post-5-img {
+    margin: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .blog-post .post-container .post-content .post-paragraph {
+    font-size: 0.9em;
+  }
+  .blog-post .post-container .previous-next .previous, .blog-post .post-container .previous-next .next {
+    width: 70px;
+    margin-top: 20px;
+    font-size: 1.1em;
+  }
+  #blog-post-footer {
+    margin-top: -218px;
   }
 }
 
