@@ -7,28 +7,6 @@ $button-color: #4f5d75;
 $button-hover-color: #424e63;
 $primary-font: 'Raleway', sans-serif;
 
-@mixin h3-style() {
-  position: relative;
-  top: 10px;
-  font-family: $primary-font;
-  font-size: 2em;
-  font-weight: 400;
-  color: black;
-  text-align: center;
-}
-
-@mixin flex-center() {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin flex-center-even {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -44,9 +22,40 @@ a:-webkit-any-link {
   cursor: pointer;
 }
 
-// ##### HOME PAGE #####
+@mixin h3-style {
+  position: relative;
+  top: 10px;
+  font-family: $primary-font;
+  font-size: 2em;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
 
-@mixin social-links {
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-even {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@mixin social-links-layout {
   display: inline;
   align-items: right;
   width: 26px;
@@ -55,11 +64,12 @@ a:-webkit-any-link {
   fill: $secondary-color;
 }
 
+
+// ##### HOME PAGE #####
+
 .navbar {
+  @include flex-center;
   background-color: $primary-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 5.5em;
   border-bottom-left-radius: 100px;
 
@@ -85,7 +95,7 @@ a:-webkit-any-link {
   .navbar-social {
 
     .social-media-icons {
-      @include social-links();
+      @include social-links-layout;
     }
 
     .social-media-icons:hover {
@@ -269,7 +279,7 @@ a:-webkit-any-link {
       font: 1.3em $primary-font;
       color: $secondary-color;
       text-align: center;
-      @include flex-center();
+      @include flex-center;
     }
 
   }
@@ -278,7 +288,7 @@ a:-webkit-any-link {
     display: none;
 
     .social-media-icons {
-     @include social-links();
+     @include social-links-layout;
     }
 
     .social-media-icons:hover {
@@ -293,7 +303,7 @@ a:-webkit-any-link {
 // ##### PROJECTS PAGE #####
 
 #projects-h3 {
-  @include h3-style();
+  @include h3-style;
 }
 
 .project-container {
@@ -356,7 +366,7 @@ a:-webkit-any-link {
 }
 
 #blog-h3{
-  @include h3-style();
+  @include h3-style;
 }
 
 @mixin img-post {
@@ -371,7 +381,7 @@ a:-webkit-any-link {
 }
 
 .card-container {
-  @include flex-center();
+  @include flex-center;
   flex-wrap: wrap;
   gap: 50px;
   position: relative;
@@ -394,28 +404,28 @@ a:-webkit-any-link {
       overflow: hidden;
     
       #img-post-1 {
-        @include img-post();
+        @include img-post;
         background-image: url(../images/blog/books.jpeg);
 
       }
   
       #img-post-2 {
-        @include img-post();
+        @include img-post;
         background-image: url(../images/blog/keyboard.jpeg);
       }
   
       #img-post-3 {
-        @include img-post();
+        @include img-post;
         background-image: url(../images/blog/wireframe.jpeg);
       }
 
       #img-post-4 {
-        @include img-post();
+        @include img-post;
         background-image: url(../images/blog/mixer.jpeg);
       }
 
       #img-post-5 {
-        @include img-post();
+        @include img-post;
         background-image: url(../images/blog/always-open.jpeg);
         
       }
@@ -423,10 +433,10 @@ a:-webkit-any-link {
     }
 
     .card-text {
+      position: relative;
       font-family: $primary-font;
       text-align: justify;
       padding: 20px;
-      position: relative;
     
       .card-title {
         text-align: left;
@@ -466,11 +476,11 @@ a:-webkit-any-link {
   margin-top: 5px;
 
   a {
+    position: relative;
     background: $secondary-color;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    position: relative;
   }
 
   a::before {
@@ -500,9 +510,7 @@ a:-webkit-any-link {
 }
 
 .blog-post {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  @include flex-column-wrap;
 
   .post-container {
 
@@ -514,7 +522,7 @@ a:-webkit-any-link {
     overflow-y: hidden;
 
     .author {
-      @include flex-center-even();
+      @include flex-center-even;
       position: relative;
       top: 30px;
       width: 35%;
@@ -533,10 +541,10 @@ a:-webkit-any-link {
     }
     
     .post-heading {
-      position: relative;
-      top: 30px;
       display: flex;
       flex-direction: column;
+      position: relative;
+      top: 30px;
       text-align: center;
       margin: 0 30px;
 
@@ -644,7 +652,7 @@ a:-webkit-any-link {
 // ##### CONTACT PAGE #####
 
 #contact-h3 {
-  @include h3-style();
+  @include h3-style;
 }
 
 .contact-container {
@@ -681,10 +689,10 @@ a:-webkit-any-link {
   }
 
   .contact-form {
-    font-family: $primary-font;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    font-family: $primary-font;
     background-color: #f2f2f2;
     border: 1px solid $primary-color;
     border-radius: 5px;

@@ -16,7 +16,6 @@ a:-webkit-any-link {
 }
 
 .navbar {
-  background-color: #2d3142;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +25,7 @@ a:-webkit-any-link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #2d3142;
   height: 5.5em;
   border-bottom-left-radius: 100px;
 }
@@ -468,10 +468,10 @@ a:-webkit-any-link {
 }
 
 .card-container .card .card-text {
+  position: relative;
   font-family: "Raleway", sans-serif;
   text-align: justify;
   padding: 20px;
-  position: relative;
 }
 
 .card-container .card .card-text .card-title {
@@ -507,11 +507,11 @@ a:-webkit-any-link {
 }
 
 .read-more a {
+  position: relative;
   background: #EF8354;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  position: relative;
 }
 
 .read-more a::before {
@@ -590,8 +590,6 @@ a:-webkit-any-link {
 }
 
 .blog-post .post-container .post-heading {
-  position: relative;
-  top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,6 +597,8 @@ a:-webkit-any-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  top: 30px;
   text-align: center;
   margin: 0 30px;
 }
@@ -733,7 +733,6 @@ a:-webkit-any-link {
 }
 
 .contact-container .contact-form {
-  font-family: "Raleway", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -742,6 +741,7 @@ a:-webkit-any-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Raleway", sans-serif;
   background-color: #f2f2f2;
   border: 1px solid #2d3142;
   border-radius: 5px;
