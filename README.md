@@ -28,7 +28,7 @@ The website was also made responsive so that users can interact with it on their
 
 ---
 
-![Sitemap](src/docs/sitemap.jpg)
+![Sitemap](src/docs/screenshots/sitemap.jpg)
 
 # Screenshots
 
