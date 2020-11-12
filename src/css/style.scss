@@ -151,11 +151,12 @@ a:-webkit-any-link {
     }
 
     .cv-link {
+      text-align: center;
       cursor: pointer;
       background-color: $button-color;
       border: 1px solid $button-color;
       border-radius: 5px;
-      width: 180px;
+      width: 140px;
       padding: 8px 10px;
       font-size: 1.3em;
       font-weight: 500;
@@ -169,13 +170,12 @@ a:-webkit-any-link {
   }
 
   .profile-picture {
-    width: auto;
-    height: 300px;
-    position: relative;
-    top: 198px;
+    align-self: center;
     border: 2px solid $primary-color;
     border-radius: 50px;
-    margin-left: 50px;
+    margin: 93px 0 0 50px;
+    width: auto;
+    height: 300px;
   }
   
 }
@@ -740,6 +740,27 @@ a:-webkit-any-link {
 
 
 // ##### MEDIA QUERIES #####
+@media screen and (max-width: 1300px) {
+  .intro-container {
+    margin: 0 75px 0 75px;
+
+    .profile-picture {
+      align-self: flex-start;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .intro-container {
+    margin: 0 75px 0 75px;
+
+    .profile-picture {
+      align-self: flex-start;
+    }
+  }
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -747,7 +768,7 @@ a:-webkit-any-link {
     margin: -20px 75px;
 
     .profile-picture {
-      margin-top: 65px;
+      align-self: center;
     }
   }
 

@@ -116,11 +116,12 @@ a:-webkit-any-link {
 }
 
 .intro-container .intro-text .cv-link {
+  text-align: center;
   cursor: pointer;
   background-color: #4f5d75;
   border: 1px solid #4f5d75;
   border-radius: 5px;
-  width: 180px;
+  width: 140px;
   padding: 8px 10px;
   font-size: 1.3em;
   font-weight: 500;
@@ -132,13 +133,14 @@ a:-webkit-any-link {
 }
 
 .intro-container .profile-picture {
-  width: auto;
-  height: 300px;
-  position: relative;
-  top: 198px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   border: 2px solid #2d3142;
   border-radius: 50px;
-  margin-left: 50px;
+  margin: 93px 0 0 50px;
+  width: auto;
+  height: 300px;
 }
 
 .skills-container {
@@ -781,12 +783,34 @@ a:-webkit-any-link {
   background-color: #d7754b;
 }
 
+@media screen and (max-width: 1300px) {
+  .intro-container {
+    margin: 0 75px 0 75px;
+  }
+  .intro-container .profile-picture {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .intro-container {
+    margin: 0 75px 0 75px;
+  }
+  .intro-container .profile-picture {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .intro-container {
     margin: -20px 75px;
   }
   .intro-container .profile-picture {
-    margin-top: 65px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .footer {
     padding: 0;
