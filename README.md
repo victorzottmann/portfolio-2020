@@ -40,39 +40,39 @@ The website was also made responsive so that users can interact with it on their
 
 ### Home Page
 
-![Home page desktop](src/docs/home-desktop1.jpg)
+![Home page desktop](src/docs/screenshots/home-desktop1.jpg)
 
 
 
-![Home page desktop view](src/docs/home-desktop2.jpg)
+![Home page desktop view](src/docs/screenshots/home-desktop2.jpg)
 
 ---
 
 ### Projects Page
 
-![Projects page desktop view](src/docs/projects-desktop1.jpg)
+![Projects page desktop view](src/docs/screenshots/projects-desktop1.jpg)
 
 ---
 
 ### Blog Page
 
-![Blog page desktop view](src/docs/blog-desktop1.jpg)
+![Blog page desktop view](src/docs/screenshots/blog-desktop1.jpg)
 
-![Blog page desktop view](src/docs/blog-desktop2.jpg)
+![Blog page desktop view](src/docs/screenshots/blog-desktop2.jpg)
 
 ---
 
 ### Articles
 
-![Blog page desktop view](src/docs/article-desktop1.jpg)
+![Blog page desktop view](src/docs/screenshots/article-desktop1.jpg)
 
-![Blog page desktop view](src/docs/article-desktop2.jpg)
+![Blog page desktop view](src/docs/screenshots/article-desktop2.jpg)
 
 ---
 
 ### Contact Page
 
-![Blog page desktop view](src/docs/contact-desktop.jpg)
+![Blog page desktop view](src/docs/screenshots/contact-desktop.jpg)
 
 ---
 
