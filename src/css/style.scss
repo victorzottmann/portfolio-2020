@@ -513,20 +513,20 @@ a:-webkit-any-link {
   @include flex-column-wrap;
 
   .post-container {
-
     background-color: white;
     border-radius: 15px;
-    margin: 70px 200px 0 200px;
-    height: 168vh;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    overflow-y: hidden;
+    // height: 168vh;
+    // min-height: 100vh;
+    margin: 70px 200px 130px 200px;
+    // overflow-y: hidden;
 
     .author {
       @include flex-center-even;
       position: relative;
       top: 30px;
-      width: 35%;
-      margin-left: 30px;
+      width: 40%;
+      // margin-left: 5px;
 
       #author-image {
         width: auto;
@@ -535,30 +535,26 @@ a:-webkit-any-link {
       }
 
       p {
-        font: 1.1em $primary-font;
+        font: 1em $primary-font;
       }
 
     }
     
-    .post-heading {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: 30px;
+    .post-heading-container {
+      @include flex-column;
       text-align: center;
-      margin: 0 30px;
+      margin: 30px;
 
-      h1 {
-        font: 3em $primary-font ;
-        margin-bottom: 0;
+      .post-title {
+        font: 3em $primary-font;
       }
 
     }
 
     .post-content {
-      position: relative;
-      top: 80px;
-      margin: 0 50px;
+      // position: relative; // This was causing me problems.
+      // top: 80px;
+      margin: 0 50px 20px 50px;
       font: 1.2em $primary-font;
       line-height: 1.5;
       text-align: justify;
@@ -595,35 +591,46 @@ a:-webkit-any-link {
 
     }
 
-    .previous-next {
+    @mixin previous-next-layout {
+      font: 1.2em $primary-font;
+      text-align: center;
+      color: white;
+      background-color: $button-color;
+      border: 1px solid $button-color;
+      border-radius: 5px;
+      padding: 5px 20px;
+    }
+
+    .initial-next-container {
+      border-top: 1px solid black;
+      margin-top: 40px;
+
+      .initial-next-button {
+        float: right;
+        margin: 35px 0;
+
+        .initial-next-link {
+          @include previous-next-layout;
+          font-size: 1em;
+        }
+
+      }
+
+      .initial-next-link:hover {
+        background-color: $button-hover-color;
+      }
+
+    }
+
+    .previous-next-container {
       display: flex;
       justify-content: space-between;
-      position: relative;
-      top: 98px;
-      margin: 0 50px;
       border-top: 1px solid gray;
-
-      .initial-previous {
-        display: none;
-      }
-
-      .initial-next {
-        position: relative;
-        float: right;
-      }
+      margin: 40px 50px 0 50px;
   
       .previous {
-        background-color: $button-color;
-        border: 1px solid $button-color;
-        font: 1.3em $primary-font;
-        color: white;
-        text-align: center;
-        border: 1px solid $primary-color;
-        border-radius: 5px;
-        margin-top: 40px;
-        padding: 5px 10px;
-        width: 60px;
-        width: 100px;
+        @include previous-next-layout;
+        margin: 30px 0;
       }
 
       .previous:hover {
@@ -645,7 +652,7 @@ a:-webkit-any-link {
 }
 
 #blog-post-footer {
-  margin-top: -130px;
+  margin-top: -250px;
 }
 
 
@@ -823,7 +830,7 @@ a:-webkit-any-link {
       position: relative;
       top: 120px;
       transform: scale(1.2);
-      height: 185vh;
+      // height: 185vh;
   
       .author {
         
