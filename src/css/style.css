@@ -1401,7 +1401,7 @@ a:-webkit-any-link {
   .contact-container .contact-description #contact-image {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    margin: -20px 0 40px -26px;
+    margin: -20px 0 40px -75px;
   }
   .contact-container .contact-description p {
     width: 350px;
@@ -1588,7 +1588,7 @@ a:-webkit-any-link {
   .contact-container .contact-description #contact-image {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
-    margin: -40px 0 20px -52px;
+    margin: -40px 0 20px -102px;
   }
   .contact-container .contact-description p {
     width: 295px;
