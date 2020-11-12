@@ -679,6 +679,10 @@ a:-webkit-any-link {
   background-color: #424e63;
 }
 
+.blog-post .post-container .previous-next-container #last-next {
+  display: none;
+}
+
 #blog-post-footer {
   margin-top: -110px;
 }

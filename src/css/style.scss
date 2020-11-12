@@ -645,6 +645,10 @@ a:-webkit-any-link {
         @extend .previous:hover
       }
 
+      #last-next {
+        display: none;
+      }
+
     }
     
   }
