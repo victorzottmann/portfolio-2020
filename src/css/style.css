@@ -605,10 +605,10 @@ a:-webkit-any-link {
 }
 
 .blog-post .post-container .post-content {
-  margin: 0 50px 20px 50px;
   font: 1.2em "Raleway", sans-serif;
-  line-height: 1.5;
   text-align: justify;
+  line-height: 1.5;
+  margin: 0 50px 20px 50px;
 }
 
 .blog-post .post-container .post-content .post-paragraph::first-letter {
@@ -978,13 +978,6 @@ a:-webkit-any-link {
   .card-container #last-card {
     margin-bottom: 100px;
   }
-  .contact-container .contact-description #contact-image {
-    margin: 0 0 30px 0;
-  }
-  .contact-container .contact-form {
-    width: 470px;
-    margin-bottom: 180px;
-  }
   .blog-post .post-container {
     margin: 50px;
   }
@@ -1038,6 +1031,13 @@ a:-webkit-any-link {
   }
   #blog-post-footer {
     margin-top: -385px;
+  }
+  .contact-container .contact-description #contact-image {
+    margin: 0 0 30px 0;
+  }
+  .contact-container .contact-form {
+    width: 470px;
+    margin-bottom: 180px;
   }
 }
 
@@ -1211,30 +1211,15 @@ a:-webkit-any-link {
     margin-top: -350px;
   }
   .card-container {
-    margin-bottom: -260px;
-  }
-  .card-container {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+    margin-bottom: -260px;
   }
   .card-container #first-card {
-    margin-top: 180px;
+    margin-top: 160px;
   }
   .card-container #last-card {
-    margin-bottom: 180px;
-  }
-  .contact-container .contact-description #contact-image {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    margin: -20px 0 20px -62px;
-  }
-  .contact-container .contact-description p {
-    width: 380px;
-    margin-bottom: -10px;
-  }
-  .contact-container .contact-form {
-    width: 350px;
-    margin-bottom: 180px;
+    margin-bottom: 150px;
   }
   .blog-post .post-container {
     position: relative;
@@ -1309,6 +1294,19 @@ a:-webkit-any-link {
   }
   #blog-post-footer {
     margin-top: -385px;
+  }
+  .contact-container .contact-description #contact-image {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    margin: -20px 0 20px -62px;
+  }
+  .contact-container .contact-description p {
+    width: 380px;
+    margin-bottom: -10px;
+  }
+  .contact-container .contact-form {
+    width: 350px;
+    margin-bottom: 180px;
   }
 }
 
@@ -1389,6 +1387,7 @@ a:-webkit-any-link {
     margin-top: -360px;
   }
   .card-container {
+    margin: 0 5px;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -1396,19 +1395,6 @@ a:-webkit-any-link {
     margin-top: -5px;
   }
   .card-container #last-card {
-    margin-bottom: -5px;
-  }
-  .contact-container .contact-description #contact-image {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    margin: -20px 0 40px -75px;
-  }
-  .contact-container .contact-description p {
-    width: 350px;
-    margin-bottom: -10px;
-  }
-  .contact-container .contact-form {
-    width: 320px;
     margin-bottom: -270px;
   }
   .blog-post .post-container {
@@ -1489,6 +1475,19 @@ a:-webkit-any-link {
   }
   #blog-post-footer {
     margin-top: -385px;
+  }
+  .contact-container .contact-description #contact-image {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    margin: -20px 0 40px -75px;
+  }
+  .contact-container .contact-description p {
+    width: 350px;
+    margin-bottom: -10px;
+  }
+  .contact-container .contact-form {
+    width: 320px;
+    margin-bottom: -270px;
   }
 }
 
@@ -1572,6 +1571,9 @@ a:-webkit-any-link {
     position: relative;
     top: -60px;
   }
+  #project-4 .project-description {
+    margin-left: 10px;
+  }
   #projects-footer {
     margin-top: -360px;
   }
@@ -1583,20 +1585,11 @@ a:-webkit-any-link {
     margin-top: -190px;
   }
   .card-container #last-card {
-    margin-bottom: 180px;
+    margin-bottom: -190px;
   }
-  .contact-container .contact-description #contact-image {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    margin: -40px 0 20px -102px;
-  }
-  .contact-container .contact-description p {
-    width: 295px;
-    margin-bottom: -10px;
-  }
-  .contact-container .contact-form {
-    width: 270px;
-    margin-bottom: -270px;
+  #blog-footer {
+    position: relative;
+    top: 95px;
   }
   .blog-post .post-container {
     -webkit-transform: scale(0.78);
@@ -1675,6 +1668,19 @@ a:-webkit-any-link {
   }
   #blog-post-footer {
     margin-top: -385px;
+  }
+  .contact-container .contact-description #contact-image {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    margin: -40px 0 20px -102px;
+  }
+  .contact-container .contact-description p {
+    width: 295px;
+    margin-bottom: -10px;
+  }
+  .contact-container .contact-form {
+    width: 270px;
+    margin-bottom: -270px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -516,17 +516,13 @@ a:-webkit-any-link {
     background-color: white;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    // height: 168vh;
-    // min-height: 100vh;
     margin: 70px 180px 0px 180px;
-    // overflow-y: hidden;
 
     .author {
       @include flex-center-even;
       position: relative;
       top: 30px;
       width: 40%;
-      // margin-left: 5px;
 
       #author-image {
         width: auto;
@@ -552,12 +548,10 @@ a:-webkit-any-link {
     }
 
     .post-content {
-      // position: relative; // This was causing me problems.
-      // top: 80px;
-      margin: 0 50px 20px 50px;
       font: 1.2em $primary-font;
-      line-height: 1.5;
       text-align: justify;
+      line-height: 1.5;
+      margin: 0 50px 20px 50px;
 
       .post-paragraph::first-letter {
         margin-left: 30px;
@@ -1035,24 +1029,6 @@ a:-webkit-any-link {
 
   }
 
-  .contact-container {
-    
-    
-    .contact-description { 
-      
-      #contact-image {
-        margin: 0 0 30px 0; 
-      }
-  
-    }
-  
-    .contact-form {
-      width: 470px;
-      margin-bottom:  180px;
-    }
-
-  }
-
   .blog-post {
   
     .post-container {
@@ -1120,6 +1096,24 @@ a:-webkit-any-link {
   
   #blog-post-footer {
     margin-top: -385px;
+  }
+
+  .contact-container {
+    
+    
+    .contact-description { 
+      
+      #contact-image {
+        margin: 0 0 30px 0; 
+      }
+  
+    }
+  
+    .contact-form {
+      width: 470px;
+      margin-bottom:  180px;
+    }
+
   }
 
 }
@@ -1336,44 +1330,17 @@ a:-webkit-any-link {
   #projects-footer {
     margin-top: -350px;
   }
-  
-  .card-container {
-    margin-bottom: -260px;
-  }
 
   .card-container {
-
     transform: scale(1.1);
+    margin-bottom: -260px;
 
     #first-card {
-      margin-top: 180px;
+      margin-top: 160px;
     }
 
     #last-card {
-      margin-bottom: 180px;
-    }
-
-  }
-
-  .contact-container {
-    
-    .contact-description { 
-      
-      #contact-image {
-        transform: scale(0.9);
-        margin: -20px 0 20px -62px; 
-      }
-
-      p {
-        width: 380px;
-        margin-bottom: -10px;
-      }
-  
-    }
-  
-    .contact-form {
-      width: 350px;
-      margin-bottom:  180px;
+      margin-bottom: 150px;
     }
 
   }
@@ -1478,6 +1445,29 @@ a:-webkit-any-link {
     margin-top: -385px;
   }
 
+  .contact-container {
+    
+    .contact-description { 
+      
+      #contact-image {
+        transform: scale(0.9);
+        margin: -20px 0 20px -62px; 
+      }
+
+      p {
+        width: 380px;
+        margin-bottom: -10px;
+      }
+  
+    }
+  
+    .contact-form {
+      width: 350px;
+      margin-bottom:  180px;
+    }
+
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -1538,7 +1528,8 @@ a:-webkit-any-link {
       }
 
       .usyd-container {
-       transform: scale(0.85);
+      transform: scale(0.85);
+
       }
 
     }
@@ -1554,7 +1545,7 @@ a:-webkit-any-link {
     align-items: center;
   
     .project-description {
- 
+
       p {
         width: 330px;
       }
@@ -1583,6 +1574,7 @@ a:-webkit-any-link {
   }
 
   .card-container {
+    margin: 0 5px;
 
     transform: scale(1);
 
@@ -1591,29 +1583,6 @@ a:-webkit-any-link {
     }
 
     #last-card {
-      margin-bottom: -5px;
-    }
-
-  }
-
-  .contact-container {
-    
-    .contact-description { 
-
-      #contact-image {
-        transform: scale(1.1);
-        margin: -20px 0 40px -75px; 
-      }
-
-      p {
-        width: 350px;
-        margin-bottom: -10px;
-      }
-  
-    }
-  
-    .contact-form {
-      width: 320px;
       margin-bottom: -270px;
     }
 
@@ -1721,7 +1690,30 @@ a:-webkit-any-link {
   #blog-post-footer {
     margin-top: -385px;
   }
+
+  .contact-container {
+    
+    .contact-description { 
+
+      #contact-image {
+        transform: scale(1.1);
+        margin: -20px 0 40px -75px; 
+      }
+
+      p {
+        width: 350px;
+        margin-bottom: -10px;
+      }
   
+    }
+  
+    .contact-form {
+      width: 320px;
+      margin-bottom: -270px;
+    }
+
+  }
+    
 }
 
 @media screen and (max-width: 320px) {
@@ -1831,6 +1823,12 @@ a:-webkit-any-link {
     }
 
   }
+
+  #project-4 {
+    .project-description {
+      margin-left: 10px;
+    }
+  }
   
   #projects-footer {
     margin-top: -360px;
@@ -1845,32 +1843,14 @@ a:-webkit-any-link {
     }
 
     #last-card {
-      margin-bottom:  180px;
+      margin-bottom:  -190px;
     }
 
   }
 
-  .contact-container {
-    
-    .contact-description { 
-
-      #contact-image {
-        transform: scale(0.9);
-        margin: -40px 0 20px -102px; 
-      }
-
-      p {
-        width: 295px;
-        margin-bottom: -10px;
-      }
-  
-    }
-  
-    .contact-form {
-      width: 270px;
-      margin-bottom: -270px;
-    }
-
+  #blog-footer {
+    position: relative;
+    top: 95px;
   }
 
   .blog-post {
@@ -1975,6 +1955,27 @@ a:-webkit-any-link {
     margin-top: -385px;
   }
 
+  .contact-container {
+    
+    .contact-description { 
+
+      #contact-image {
+        transform: scale(0.9);
+        margin: -40px 0 20px -102px; 
+      }
+
+      p {
+        width: 295px;
+        margin-bottom: -10px;
+      }
+  
+    }
+  
+    .contact-form {
+      width: 270px;
+      margin-bottom: -270px;
+    }
+
+  }
+
 }
-
-
