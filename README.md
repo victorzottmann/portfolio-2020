@@ -126,7 +126,19 @@ For some reason the gap between each card is broken when viewing on an iPad, eve
 
 
 
+
+
+
+
+
+
 <img src="docs/screenshots/blog-phone.png" alt="Blog page tablet view" style="zoom:100%;" /> <img src="docs/screenshots/article-phone1.png" alt="Article tablet view"  /> 
+
+
+
+
+
+
 
 
 
