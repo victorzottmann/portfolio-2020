@@ -142,11 +142,11 @@ For some reason the gap between each card is broken when viewing on an iPad, eve
 
 
 
- <img src="docs/screenshots/article-phone2.png" alt="Article tablet view"  />  
+ <img src="docs/screenshots/article-phone2.png" alt="Article tablet view"  />  <img src="docs/screenshots/contact-phone1.png" alt="Contact page phone view"  />
 
 
 
-<img src="docs/screenshots/contact-phone1.png" alt="Contact page phone view"  /> 
+ 
 
 <img src="docs/screenshots/contact-phone2.png" alt="Contact page tablet view" style="float: left;" />
 
