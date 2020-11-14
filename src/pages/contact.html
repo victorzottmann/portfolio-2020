@@ -4,20 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - Victor Zottmann</title>
-  <link rel="icon" href="images/logo-small.png">
-  <link rel="stylesheet" href="css/style.css" integrity="sha384-xt6fzz579LBRrO7QyuwpXgeTp2rlKNmeuaFWxS14gJDkjmpU5dB22xHvBA1crtaH">
+  <title>Contact - Victor Zottmann</title>
+  <link rel="icon" href="../images/logo-small.png">
+  <link rel="stylesheet" href="../css/style.css" integrity="sha384-xt6fzz579LBRrO7QyuwpXgeTp2rlKNmeuaFWxS14gJDkjmpU5dB22xHvBA1crtaH">
 </head>
 
-<body class="blog-bg">
-  
+<body>
+
   <header>
     <nav class="navbar">
       <ul class="navbar-list">
         <li class="navbar-item"><a class="navbar-link" href="../index.html">Home</a></li>
         <li class="navbar-item"><a class="navbar-link" href="projects.html">Projects</a></li>
-        <li class="navbar-item" id="active-item"><a class="navbar-link" id="active-link" href="blog.html">Blog</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="blog.html">Blog</a></li>
+        <li class="navbar-item" id="active-item"><a class="navbar-link" id="active-link" href="contact.html">Contact</a>
+        </li>
       </ul>
       <div class="navbar-social">
         <!-- Twitter -->
@@ -45,103 +46,34 @@
   </header>
 
   <main>
-    <h3 id=blog-h3>Latest articles</h3>
-    <div class="card-container">
+    <h3 id="contact-h3">Get in touch!</h3>
+    <div class="contact-container">
+      <div class="contact-description">
+        <img id="contact-image" src="../images/contact/contact-picture.jpeg" alt="Contact picture">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam maxime adipisci facilis mollitia. Repellendus magni, quasi ad fuga praesentium officiis dolor temporibus, quo harum voluptas laboriosam deserunt eum rem obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p><br><br>
+      </div>
+      <div class="contact-form">
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
 
-      <article>
-        <div class="card" id="first-card">
-          <div class="card-image">
-            <div class="background-image" id="img-post-1"></div>
-            </div>
-          <div class="card-text">
-            <h1 class="card-title">My Favorite Non-Fiction Books of All Time</h1>
-            <h4 class="date-published">November 9, 2020</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum sapien vitae sapien semper, quis bibendum quam euismod. Aliquam non interdum risus, ac sagittis dui. Mauris a mauris at felis efficitur cursus. Nulla mollis mauris dui, at auctor mauris pulvinar sed.
-            </p>
-            <div class="read-more">
-              <a href="blog-posts/post-1.html">Read more &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </article>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
 
-      <article>
-        <div class="card">
-          <div class="card-image">
-            <div class="background-image" id="img-post-2"></div>
-            </div>
-          <div class="card-text">
-            <h1 class="card-title">5 Time-Saving Shortcuts in VS Code</h1>
-            <h4 class="date-published">November 7, 2020</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum sapien vitae sapien semper, quis bibendum quam euismod. Aliquam non interdum risus, ac sagittis dui. Mauris a mauris at felis efficitur cursus. Nulla mollis mauris dui, at auctor mauris pulvinar sed.
-            </p>
-            <div class="read-more">
-              <a href="blog-posts/post-2.html">Read more &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </article>
+          <label for="email">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your email address...">
 
-      <article>
-        <div class="card">
-          <div class="card-image">
-            <div class="background-image" id="img-post-3"></div>
-            </div>
-          <div class="card-text">
-            <h1 class="card-title">CSS Flexbox: A Comprehensive Guide</h1>
-            <h4 class="date-published">November 3, 2020</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum sapien vitae sapien semper, quis bibendum quam euismod. Aliquam non interdum risus, ac sagittis dui. Mauris a mauris at felis efficitur cursus. Nulla mollis mauris dui, at auctor mauris pulvinar sed.
-            </p>
-            <div class="read-more">
-              <a href="blog-posts/post-3.html">Read more &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </article>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something..." style="height:110px"></textarea>
 
-      <article>
-        <div class="card">
-          <div class="card-image">
-            <div class="background-image" id="img-post-4"></div>
-            </div>
-          <div class="card-text">
-            <h1 class="card-title">How Audio and Acoustics Relate to Coding</h1>
-            <h4 class="date-published">October 28, 2020</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum sapien vitae sapien semper, quis bibendum quam euismod. Aliquam non interdum risus, ac sagittis dui. Mauris a mauris at felis efficitur cursus. Nulla mollis mauris dui, at auctor mauris pulvinar sed.
-            </p>
-            <div class="read-more">
-              <a href="blog-posts/post-4.html">Read more &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article>
-        <div class="card" id="last-card">
-          <div class="card-image">
-            <div class="background-image" id="img-post-5"></div>
-            </div>
-          <div class="card-text">
-            <h1 class="card-title">Transitioning to a Career in Web Development</h1>
-            <h4 class="date-published">October 25, 2020</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum sapien vitae sapien semper, quis bibendum quam euismod. Aliquam non interdum risus, ac sagittis dui. Mauris a mauris at felis efficitur cursus. Nulla mollis mauris dui, at auctor mauris pulvinar sed.
-            </p>
-            <div class="read-more">
-              <a href="blog-posts/post-5.html">Read more &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </article>   
-    </div> 
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
   </main>
 
   <section>
-    <footer class="footer" id="blog-footer">
+    <footer class="footer" id="contact-footer">
       <div class="social-footer">
         <!-- Twitter -->
         <a href="https://twitter.com/vzcodes" target="_blank">
