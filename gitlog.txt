@@ -1,3 +1,33 @@
+commit 6e90e1859dca5fbb3da52e17c32dd376e7e57405
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 23:54:59 2020 +1100
+
+    fixed misalignment of phone screenshots
+
+commit 0b7a8794a80ef81b4457dff207f16fb73725c4c1
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 23:53:15 2020 +1100
+
+    increased spacing between phone screenshots
+
+commit 59a7e56ecbd0c798a4cc00aa7832d716f523e9fb
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 23:50:32 2020 +1100
+
+    descreased the size of phone screenshots
+
+commit 0cab120a5d128c8a2205e889d538831ec16a27b8
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 23:40:29 2020 +1100
+
+    fixed image directory for README file
+
+commit 8a3f7e6429f11ff7e0a8c7e674ee4dbfa23a1c92
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 22:56:04 2020 +1100
+
+    added remaining images to README file
+
 commit af96769273b02487a82f418ab33538f4e6a0b3f1
 Author: victorzottmann <zottmann.victor@gmail.com>
 Date:   Sat Nov 14 17:21:16 2020 +1100
