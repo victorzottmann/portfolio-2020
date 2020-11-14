@@ -1,3 +1,9 @@
+commit 5a25e5aa6c397db3557fe453297fc2284fbdbb1a
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 15:33:54 2020 +1100
+
+    reorganized folder structure and included ppt presentation
+
 commit 731f22f7f559b6989bd0543f82270270088e9bcb
 Author: victorzottmann <zottmann.victor@gmail.com>
 Date:   Sat Nov 14 15:23:56 2020 +1100

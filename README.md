@@ -1,12 +1,10 @@
-
-
 # Victor Zottmann's Portfolio
 
 ---
 
 ## Links
 
-Website: https://victorz-portfolio.netlify.app
+Website: https://victorz.netlify.app
 
 GitHub: https://github.com/victorzottmann/portfolio
 
@@ -28,7 +26,7 @@ The website was also made responsive so that users can interact with it on their
 
 ---
 
-![Sitemap](src/docs/screenshots/sitemap.jpg)
+![Sitemap](docs/screenshots/sitemap.jpg)
 
 # Screenshots
 
@@ -40,39 +38,39 @@ The website was also made responsive so that users can interact with it on their
 
 ### Home Page
 
-![Home page desktop](src/docs/screenshots/home-desktop1.jpg)
+![Home page desktop](docs/screenshots/home-desktop1.jpg)
 
 
 
-![Home page desktop view](src/docs/screenshots/home-desktop2.jpg)
+![Home page desktop view](docs/screenshots/home-desktop2.jpg)
 
 ---
 
 ### Projects Page
 
-![Projects page desktop view](src/docs/screenshots/projects-desktop1.jpg)
+![Projects page desktop view](docs/screenshots/projects-desktop1.jpg)
 
 ---
 
 ### Blog Page
 
-![Blog page desktop view](src/docs/screenshots/blog-desktop1.jpg)
+![Blog page desktop view](docs/screenshots/blog-desktop1.jpg)
 
-![Blog page desktop view](src/docs/screenshots/blog-desktop2.jpg)
+![Blog page desktop view](docs/screenshots/blog-desktop2.jpg)
 
 ---
 
 ### Articles
 
-![Blog page desktop view](src/docs/screenshots/article-desktop1.jpg)
+![Blog page desktop view](docs/screenshots/article-desktop1.jpg)
 
-![Blog page desktop view](src/docs/screenshots/article-desktop2.jpg)
+![Blog page desktop view](docs/screenshots/article-desktop2.jpg)
 
 ---
 
 ### Contact Page
 
-![Blog page desktop view](src/docs/screenshots/contact-desktop.jpg)
+![Blog page desktop view](docs/screenshots/contact-desktop.jpg)
 
 ---
 
@@ -108,4 +106,6 @@ The website was also made responsive so that users can interact with it on their
 
 - Google Fonts
 - Iconify (for social media icons)
+- Coolors (for color palette)
+- Balsamiq (for wireframes)
 
