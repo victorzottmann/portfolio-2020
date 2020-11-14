@@ -80,15 +80,15 @@ The website was also made responsive so that users can interact with it on their
 
 ### Home Page - Tablet
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/home-tablet.jpeg" alt="home-tablet" style="zoom: 33%; float: left" />
+<img src="docs/screenshots/home-tablet1.jpeg" alt="Home page tablet view" style="zoom:33%; float: left" />
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/home-tablet2.jpeg" alt="home-tablet2" style="zoom:33%; float: left" />
+<img src="docs/screenshots/home-tablet2.jpeg" alt="Home page tablet view" style="zoom:33%; float: left;" />
 
 ---
 
 ### Projects Page - Tablet
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/projects-tablet.jpeg" alt="projects-tablet" style="zoom:33%; float: left" />
+<img src="docs/screenshots/projects-tablet.jpeg" alt="Projects page tablet view" style="zoom:33%; float: left" />
 
 ---
 
@@ -96,37 +96,37 @@ The website was also made responsive so that users can interact with it on their
 
 For some reason the gap between each card is broken when viewing on an iPad, even though the layout behaves as it should in the mobile view in Chrome's developer tools. The same happens in landscape mode.
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/blog-tablet1.jpeg" alt="blog-tablet1" style="zoom:33%; float: left" />
+<img src="docs/screenshots/blog-tablet1.jpeg" alt="Blog page tablet view" style="zoom:33%; float: left" />
 
 #### Blog - Landscape - Tablet
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/blog-tablet2.jpeg" alt="blog-tablet2" style="zoom:33%; float: left" />
+<img src="docs/screenshots/blog-tablet2.jpeg" alt="Blog page tablet view" style="zoom:33%; float: left;" />
 
 ---
 
 ### Articles - Tablet
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/article-tablet.jpeg" alt="article-tablet" style="zoom:33%; float: left" />
+<img src="docs/screenshots/article-tablet.jpeg" alt="Article tablet view" style="zoom:33%; float: left;" />
 
 ---
 
 ### Contact Page - Tablet
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/contact-tablet.jpeg" alt="contact-tablet" style="zoom: 33%; float: left" />
+<img src="docs/screenshots/contact-tablet.jpeg" alt="Contact page tablet view" style="zoom:33%; float: left;" />
 
 ---
 
 
 
-### Smartphone - Home, Projects, Blog, Articles and Contact Pages, respectively
+### Phone - Home, Projects, Blog, Articles and Contact Pages, respectively
 
 ---
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/home-phone.PNG" alt="home-phone" style="zoom:25%;" /> <img src="/Users/victor/code/portfolio/docs/screenshots/projects-phone.PNG" alt="projects-phone" style="zoom:25%;" /> <img src="/Users/victor/code/portfolio/docs/screenshots/blog-phone.jpeg" alt="blog-phone" style="zoom:25%;" />  
+<img src="docs/screenshots/home-phone.jpg" alt="Home page phone view" style="zoom: 25%; float: left" /> <img src="docs/screenshots/projects-phone.jpg" alt="Projects page tablet view" style="zoom:25%;" /> <img src="docs/screenshots/blog-phone.jpeg" alt="Blog page tablet view" style="zoom:25%;" /> 
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/article-phone1.jpeg" alt="article-phone1" style="zoom:25%;" /> <img src="/Users/victor/code/portfolio/docs/screenshots/article-phone2.jpeg" alt="article-phone2" style="zoom:25%;" /> <img src="/Users/victor/code/portfolio/docs/screenshots/contact-phone1.jpeg" alt="contact-phone1" style="zoom:25%;" /> 
+<img src="docs/screenshots/article-phone1.jpeg" alt="Article tablet view" style="zoom:25%;" /> <img src="docs/screenshots/article-phone2.jpeg" alt="Article tablet view" style="zoom:25%;" />  <img src="docs/screenshots/contact-phone1.jpeg" alt="Contact page phone view" style="zoom:25%;" /> 
 
-<img src="/Users/victor/code/portfolio/docs/screenshots/contact-phone2.jpeg" alt="contact-phone2" style="zoom:25%; float: left" />
+<img src="docs/screenshots/contact-phone2.jpeg" alt="Contact page tablet view" style="zoom:25%; float: left" />
 
 # Target Audience
 
