@@ -1,3 +1,9 @@
+commit af96769273b02487a82f418ab33538f4e6a0b3f1
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 17:21:16 2020 +1100
+
+    fixed redirect bug with github and twitter links
+
 commit 15edb52bd9f8ada5839f594718af89caa0c96392
 Author: victorzottmann <zottmann.victor@gmail.com>
 Date:   Sat Nov 14 16:05:29 2020 +1100
