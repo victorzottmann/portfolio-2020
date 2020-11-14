@@ -80,7 +80,7 @@ The website was also made responsive so that users can interact with it on their
 
 ### Home Page - Tablet
 
-<img src="docs/screenshots/home-tablet1.jpeg" alt="Home page tablet view" style="zoom:33%; float: left" />
+<img src="docs/screenshots/home-tablet.jpeg" alt="Home page tablet view" style="zoom:33%; float: left" />
 
 <img src="docs/screenshots/home-tablet2.jpeg" alt="Home page tablet view" style="zoom:33%; float: left;" />
 
@@ -122,11 +122,21 @@ For some reason the gap between each card is broken when viewing on an iPad, eve
 
 ---
 
-<img src="docs/screenshots/home-phone.jpg" alt="Home page phone view" style="zoom: 25%; float: left" /> <img src="docs/screenshots/projects-phone.jpg" alt="Projects page tablet view" style="zoom:25%;" /> <img src="docs/screenshots/blog-phone.jpeg" alt="Blog page tablet view" style="zoom:25%;" /> 
+<img src="docs/screenshots/home-phone.jpg" alt="Home page phone view" style="float: left;" /> <img src="docs/screenshots/projects-phone.jpg" alt="Projects page tablet view"  /> 
 
-<img src="docs/screenshots/article-phone1.jpeg" alt="Article tablet view" style="zoom:25%;" /> <img src="docs/screenshots/article-phone2.jpeg" alt="Article tablet view" style="zoom:25%;" />  <img src="docs/screenshots/contact-phone1.jpeg" alt="Contact page phone view" style="zoom:25%;" /> 
 
-<img src="docs/screenshots/contact-phone2.jpeg" alt="Contact page tablet view" style="zoom:25%; float: left" />
+
+<img src="docs/screenshots/blog-phone.png" alt="Blog page tablet view" style="zoom:100%;" /> <img src="docs/screenshots/article-phone1.png" alt="Article tablet view"  /> 
+
+
+
+ <img src="docs/screenshots/article-phone2.png" alt="Article tablet view"  />  
+
+
+
+<img src="docs/screenshots/contact-phone1.png" alt="Contact page phone view"  /> 
+
+<img src="docs/screenshots/contact-phone2.png" alt="Contact page tablet view" style="float: left;" />
 
 # Target Audience
 
