@@ -1,0 +1,394 @@
+commit 731f22f7f559b6989bd0543f82270270088e9bcb
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 15:23:56 2020 +1100
+
+    added SRI and updated <title> of article pages to the post title itself
+
+commit 8f8d537e19074b46fac47a86150f58bf6cd80b9f
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 02:21:42 2020 +1100
+
+    updated resume
+
+commit 9964d2bfad2cd6cd99b4ecf8f12c4afc5cae93ea
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 00:34:24 2020 +1100
+
+    removed header and figure tags from almost all content as it was causing layout problems
+
+commit 30a341cac74b7cb5a2eb473f77679aff0592e153
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 13 00:10:15 2020 +1100
+
+    fixed contact image position in mobile view
+
+commit f6b0013305b7861da4ff9638fc2959165113808a
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 12 23:59:50 2020 +1100
+
+    added chess and sound calculator as projects in the projects page and fixed typo in fifth article
+
+commit 8b041b71e5115216435cb90e693a159dfb539602
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 12 17:12:50 2020 +1100
+
+    adjusted the responsiveness of the profile picture in the home page and added resume file
+
+commit 7b9d6406d2396a355919b832fe39bbc7671abd9b
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 12 16:32:12 2020 +1100
+
+    fixed sitemapt screenshot path in README file
+
+commit 1e52e1886c948e14de16eaa1a26cb695d1de889e
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 12 16:29:20 2020 +1100
+
+    made all pages responsive and organized docs folder
+
+commit 4ddff7a5449fe44b80cdc200a19551adb022fd75
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 12 12:52:44 2020 +1100
+
+    fixed layout bug in the blog post container
+
+commit f0a010c844d9b73c8cb3ebc215e1944f7ec027fa
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Wed Nov 11 23:49:51 2020 +1100
+
+    fixed typo in twitter redirect
+
+commit 9e1d3eb6817dce4b53f987b633043bb1ef568413
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Wed Nov 11 22:58:03 2020 +1100
+
+    updated twitter link redirect and began working in README file
+
+commit 65bc142b3c4f23a9aa914f414905ffe50942b619
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Mon Nov 9 23:31:09 2020 +1100
+
+    began making the blog posts responsive
+
+commit 2762c23151f35b2f313721d46db5520a67cc5435
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Mon Nov 9 21:55:08 2020 +1100
+
+    made all navbar pages responsive
+
+commit a098da080a904e97f4b0b5b09b9afc3761a49399
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Mon Nov 9 19:50:27 2020 +1100
+
+    Changed the image of all blog cards and finalized layout of post pages
+
+commit 42da81c497c35aaba8e6687624542fc867aca3be
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Mon Nov 9 01:09:41 2020 +1100
+
+    updated hover color for the resume download link
+
+commit 665500b35aaa6ab4096107693d13ad1b3f11b6d0
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Mon Nov 9 01:05:55 2020 +1100
+
+    created blog post pages, added content and styled them
+
+commit 15f5acb38802e9f64d441f8ddfe1852bb733baf7
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sun Nov 8 00:30:29 2020 +1100
+
+    moved the social media icons to the footer in mobile view and adjusted the media breakpoints for the home page
+
+commit 044fdbb3ee81ea78191189be6b23a4f4c099aa64
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 7 17:24:40 2020 +1100
+
+    reorganized the file structure for the whole project
+
+commit 9d3ad199e7d57fb48028a6a4cc602c1d72d6c9c2
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 7 16:08:45 2020 +1100
+
+    added initial content to projects page and styled it with content dividers
+
+commit c9a1703bc7646ff9fbadcbf0d74bd7f74e0c6d6d
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 6 17:09:53 2020 +1100
+
+    added h3 heading to projects page
+
+commit ab9de57bd05749c5fdfed0fa6449c14a528e5d84
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 6 16:51:38 2020 +1100
+
+    added resume button on home page, placed social media link in navbar, and put lighter gray background in blog page
+
+commit 0c0c4177999cb4711753869aab403f912a8097ec
+Merge: ce7a606 ed25318
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 6 14:17:08 2020 +1100
+
+    Merge branch 'contact-page' into main
+
+commit ed2531892057a19a06dae649a39ef2e2e4958263
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 6 13:17:10 2020 +1100
+
+    added social icons to navbar, contact form, and placeholder image and description
+
+commit ce7a60652f2d909e9542d82747ffc3d5191f1523
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 6 10:40:24 2020 +1100
+
+    updated the Favicon link in the blog page
+
+commit 628fa4d977d855132e105dcdc5494cc8cc421e17
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 6 10:28:16 2020 +1100
+
+    added missing footer to blog page and fixed the CSS layout
+
+commit f252a464588e39f2d2779639a7df741678e98758
+Merge: 06b6c67 d59a797
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 6 10:24:12 2020 +1100
+
+    fixed blog page
+
+commit d59a7974cdfb360c76fd31022ea860b3d14408f8
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Fri Nov 6 10:21:47 2020 +1100
+
+    trying to fix merging issues
+
+commit 06b6c67e704239f27a135216d1426289de3d66c7
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 21:48:38 2020 +1100
+
+    removed unused images from images directory
+
+commit 0c1e87fd37e740a0ab221f625966b74f2a59fcba
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 21:43:34 2020 +1100
+
+    fixed title of blog page
+
+commit 7bfc6077a31cbbed7495a20e7d3f36a4c07d5042
+Merge: c391a13 bb3c7ae
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 21:42:09 2020 +1100
+
+    fixed merge conflicts
+
+commit bb3c7ae394ed461083e7ea8923b5c90565b1769e
+Merge: bb323e4 c9ce2e3
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 21:39:42 2020 +1100
+
+    fixed merge conflicts
+
+commit bb323e43c2f39301928bc36351961a9a35ef599f
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 21:37:42 2020 +1100
+
+    updated the html files to link to blog page instead of resources page
+
+commit c391a1329953b4592513b822b868e154ba6ff0d5
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 17:04:08 2020 +1100
+
+    random
+
+commit c9ce2e3512137ebc7d708225a30931c9b6279fe4
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 17:02:01 2020 +1100
+
+    random
+
+commit 67f693940e5bef81164e5213b721d58c162bd220
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 16:27:58 2020 +1100
+
+    fixed the blog page layout and added six provisional blog posts
+
+commit ac564e7cf1c4ce8789a80b1e1fac2b01258e7a31
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 13:22:00 2020 +1100
+
+    added media queries for screen sizes of up to 1200px, 950px and 600px
+
+commit fcb126e7716a87a45745c21f984e30124f4ed4ff
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 13:04:04 2020 +1100
+
+    added media queries for screen sizes of up to 320px, 375px, 425px and 768px
+
+commit 162f9ee79804a6379441aef024abd2de30444b88
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 10:02:40 2020 +1100
+
+    just fixing things
+
+commit bee0704ab955fcef83fc5629b947b28685315885
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Thu Nov 5 09:43:51 2020 +1100
+
+    trying to fix responsive issues
+
+commit 87814f1d2bccf19b4545a7d581e8586c8014d4f1
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Wed Nov 4 00:28:46 2020 +1100
+
+    updated Favicon
+
+commit d08fbef6d79e66c0a7763200460f8a4b6c046b56
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Wed Nov 4 00:27:01 2020 +1100
+
+    added text and preview images for three blog cards and styled them
+
+commit 675f9bba5d50a6f5003a5dd1c4e19c438136c3ba
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Wed Nov 4 00:22:01 2020 +1100
+
+    initial commit blog page
+
+commit e72667450ddc429c493f61b2886456fdb45277f0
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 22:10:05 2020 +1100
+
+    renamed resources to blog
+
+commit 23ad1777f745970cf0ec158a3c93a86d97cccbc9
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 22:07:18 2020 +1100
+
+    update
+
+commit 8f90a545b1f7f85c52faf78d73b4d473610e0445
+Merge: c216c8a 992083c
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 22:06:28 2020 +1100
+
+    erased
+
+commit c216c8aff997791feb031bf3bf6668ff570760bb
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 22:05:23 2020 +1100
+
+    random
+
+commit 2990db1751863501d3ce55240c6f7926a9c73fdf
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 22:00:58 2020 +1100
+
+    added media breakpoint for screens between 901px and 1200px
+
+commit 992083c5792f0e849bd3f29b9f8707cb6f93be46
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 16:42:23 2020 +1100
+
+    removed media breakpoint to work on it specifically in another branch
+
+commit d34fdda2eaf9a9eb3f4706d345cbd5d4c12aba22
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 16:32:45 2020 +1100
+
+    updated intro paragraph and added line height to it
+
+commit 1184f20e9f652020686c931eb3b310952eb20431
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 16:05:44 2020 +1100
+
+    updated home paragraph
+
+commit 3970a821b540f066fb92568e87b04d94ffd5d7a1
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Tue Nov 3 14:59:45 2020 +1100
+
+    modified Favicon and changed Java skill icon to Github
+
+commit 7c07e19600677155a0dde4c12b22a2063aad6f76
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Mon Nov 2 02:28:47 2020 +1100
+
+    adjusted the spacing between sections and modified USYD logo
+
+commit 05073e7202541e25cd712b3c7025dcc115e4dbe2
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Mon Nov 2 02:11:00 2020 +1100
+
+    updated profile picture
+
+commit 19aee8eee19e534afd76a2c6753a0ecc81a0b2d6
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Mon Nov 2 01:57:34 2020 +1100
+
+    added tech skills, education and footer sections to home page
+
+commit 69cf7c953392a7012e300a21cc373c7e34dda0c2
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sun Nov 1 19:37:27 2020 +1100
+
+    fixed renaming of page links and files
+
+commit 62d4dd544c437aa0f9deba4565bdd4c673021bea
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sun Nov 1 17:18:30 2020 +1100
+
+    added active highlights to all navbar links
+
+commit 3dd80a1f1c3eeec74189655f772d4b699366ece2
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sun Nov 1 00:54:42 2020 +1100
+
+    removed footer and updated the home page with a div for the main content
+
+commit d66d3a16423ccac70f91a9a673d1b30e620001d5
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Oct 31 22:02:29 2020 +1100
+
+    added home page to navbar and added a heading and sub-heading to the page
+
+commit 5fffe1b837350fa26789c16cc24a4f1a71fa92fe
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Oct 31 20:34:18 2020 +1100
+
+    fixed the navbar links
+
+commit 0cca4f38982003abb4fa9d8aed4c85496deacc89
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Oct 31 20:16:36 2020 +1100
+
+    modified the header to contain only navbar and styled it to orange text and dark blue background
+
+commit 19c91d75604b1d9dd49d012f358b60b3561bedf5
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Oct 31 19:21:47 2020 +1100
+
+    initial commit for home-page redesign
+
+commit 428c0bfa9b7fd79ba71d726584cd8fb5e7149b12
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Oct 31 18:50:12 2020 +1100
+
+    added footer for social media links and included youtube
+
+commit da9b6d1ee8ccc3bf7f453b2ac00c94c14fb4e216
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Oct 31 17:27:55 2020 +1100
+
+    added and styles headings of cover (home) page and included links to About page and Resume
+
+commit cecfe377f65409371661f07c62557f0895c2eb85
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Oct 31 14:59:34 2020 +1100
+
+    added the HTML starting point with Favicon to all pages.
+
+commit 70ed4bf972d524b4918be5820a4a04ba624e3106
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Oct 31 14:49:42 2020 +1100
+
+    initial commit
