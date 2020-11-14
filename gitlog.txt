@@ -1,3 +1,9 @@
+commit 15edb52bd9f8ada5839f594718af89caa0c96392
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 16:05:29 2020 +1100
+
+    fixed file path for screenshots
+
 commit 5a25e5aa6c397db3557fe453297fc2284fbdbb1a
 Author: victorzottmann <zottmann.victor@gmail.com>
 Date:   Sat Nov 14 15:33:54 2020 +1100
