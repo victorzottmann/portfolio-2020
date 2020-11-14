@@ -1,3 +1,15 @@
+commit 8bfc8652b14b54ebd8f0e9f3b98137a0a26c5ad8
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sun Nov 15 00:32:59 2020 +1100
+
+    reorganized folder structure as per the delivery requirements
+
+commit 45451063a794db4daf6e8d12cbe28a81c0217c19
+Author: victorzottmann <zottmann.victor@gmail.com>
+Date:   Sat Nov 14 23:57:15 2020 +1100
+
+    updated gitlog file
+
 commit 6e90e1859dca5fbb3da52e17c32dd376e7e57405
 Author: victorzottmann <zottmann.victor@gmail.com>
 Date:   Sat Nov 14 23:54:59 2020 +1100
