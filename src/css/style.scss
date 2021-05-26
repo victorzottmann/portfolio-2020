@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 $primary-color: #2d3142;
-$secondary-color: #EF8354;
+$secondary-color: #ef8354;
 $button-color: #4f5d75;
 $button-hover-color: #424e63;
 $primary-font: 'Raleway', sans-serif;
@@ -64,7 +63,6 @@ a:-webkit-any-link {
   fill: $secondary-color;
 }
 
-
 // ##### HOME PAGE #####
 
 .navbar {
@@ -86,14 +84,11 @@ a:-webkit-any-link {
         color: $secondary-color;
         font-family: 'Raleway', sans-serif;
         font-size: 1.3em;
-        
       }
-
     }
   }
 
   .navbar-social {
-
     .social-media-icons {
       @include social-links-layout;
     }
@@ -101,14 +96,12 @@ a:-webkit-any-link {
     .social-media-icons:hover {
       fill: white;
     }
-
   }
 
   .navbar-item:hover {
     border-bottom: 2px solid white;
     transition: 20ms;
   }
-
 }
 
 #active-item {
@@ -117,7 +110,6 @@ a:-webkit-any-link {
   #active-link {
     color: white;
   }
-
 }
 
 .intro-container {
@@ -136,13 +128,13 @@ a:-webkit-any-link {
       -webkit-text-stroke-color: $primary-color;
       margin-bottom: 20px;
     }
-  
+
     #intro-h3 {
       margin-top: 0;
       font-size: 2em;
       font-weight: 400;
     }
-  
+
     .intro-paragraph {
       text-align: justify;
       font-size: 1.2em;
@@ -160,13 +152,12 @@ a:-webkit-any-link {
       padding: 8px 10px;
       font-size: 1.3em;
       font-weight: 500;
-      color: white ; 
+      color: white;
     }
 
     .cv-link:hover {
       background-color: $button-hover-color;
     }
-
   }
 
   .profile-picture {
@@ -177,7 +168,6 @@ a:-webkit-any-link {
     width: auto;
     height: 300px;
   }
-  
 }
 
 .skills-container {
@@ -195,20 +185,18 @@ a:-webkit-any-link {
     text-align: center;
     margin-top: 70px;
   }
-  
+
   .skills {
     display: flex;
     justify-content: space-around;
-  
+
     .tech-icons {
       display: flex;
       width: 110px;
       height: 110px;
       margin-top: 40px;
     }
-  
   }
-
 }
 
 .education-container {
@@ -228,7 +216,7 @@ a:-webkit-any-link {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
-  
+
     .coder-container {
       display: flex;
 
@@ -242,7 +230,6 @@ a:-webkit-any-link {
         padding-top: 12px;
         line-height: 1.5em;
       }
-
     }
 
     .usyd-container {
@@ -258,11 +245,8 @@ a:-webkit-any-link {
         padding-top: 12px;
         line-height: 1.5em;
       }
-      
     }
-  
   }
-
 }
 
 .footer {
@@ -274,31 +258,26 @@ a:-webkit-any-link {
   padding-top: 16px;
 
   .footer-text {
-  
     p {
       font: 1.3em $primary-font;
       color: $secondary-color;
       text-align: center;
       @include flex-center;
     }
-
   }
 
-  .social-footer { 
+  .social-footer {
     display: none;
 
     .social-media-icons {
-     @include social-links-layout;
+      @include social-links-layout;
     }
 
     .social-media-icons:hover {
       fill: white;
     }
-
   }
-
 }
-
 
 // ##### PROJECTS PAGE #####
 
@@ -321,7 +300,6 @@ a:-webkit-any-link {
   }
 
   .project-description {
-
     h3 {
       text-align: center;
       font: 1.8em $primary-font;
@@ -338,12 +316,11 @@ a:-webkit-any-link {
     p::first-letter {
       margin-left: 30px;
     }
-
   }
-
 }
 
-#project-1, #project-3 {
+#project-1,
+#project-3 {
   background-color: #dbdada;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
@@ -358,14 +335,14 @@ a:-webkit-any-link {
   margin-top: -65px;
 }
 
-
 // ##### BLOG PAGE #####
 
-.blog-bg { // <body> tag for the Blog and Posts pages
+.blog-bg {
+  // <body> tag for the Blog and Posts pages
   background-color: #f2f2f2;
 }
 
-#blog-h3{
+#blog-h3 {
   @include h3-style;
 }
 
@@ -387,14 +364,13 @@ a:-webkit-any-link {
   position: relative;
   top: 30px;
   margin: 0 20px -60px 20px;
- 
+
   .card {
     background-color: white;
     border-radius: 15px;
     width: 350px;
     margin-bottom: 25px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
     .card-image {
       border-radius: 15px 15px 0 0;
@@ -402,18 +378,17 @@ a:-webkit-any-link {
       position: relative;
       z-index: 1;
       overflow: hidden;
-    
+
       #img-post-1 {
         @include img-post;
         background-image: url(../images/blog/books.jpeg);
-
       }
-  
+
       #img-post-2 {
         @include img-post;
         background-image: url(../images/blog/keyboard.jpeg);
       }
-  
+
       #img-post-3 {
         @include img-post;
         background-image: url(../images/blog/wireframe.jpeg);
@@ -427,9 +402,7 @@ a:-webkit-any-link {
       #img-post-5 {
         @include img-post;
         background-image: url(../images/blog/always-open.jpeg);
-        
       }
-
     }
 
     .card-text {
@@ -437,22 +410,19 @@ a:-webkit-any-link {
       font-family: $primary-font;
       text-align: justify;
       padding: 20px;
-    
+
       .card-title {
         text-align: left;
         font-size: 1.5em;
         line-height: 40px;
         margin-top: 0;
       }
-      
+
       .card-description {
         position: relative;
       }
-      
     }
-
   }
-
 }
 
 .card-description::first-letter {
@@ -495,13 +465,11 @@ a:-webkit-any-link {
     transform-origin: center;
     transition: transform 0.2s;
   }
-  
+
   a:hover::before {
     transform: scaleX(1);
   }
-  
 }
-
 
 // ##### BLOG POST PAGES #####
 
@@ -515,7 +483,7 @@ a:-webkit-any-link {
   .post-container {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin: 70px 180px 0px 180px;
 
     .author {
@@ -533,9 +501,8 @@ a:-webkit-any-link {
       p {
         font: 1em $primary-font;
       }
-
     }
-    
+
     .post-heading-container {
       @include flex-column;
       text-align: center;
@@ -544,7 +511,6 @@ a:-webkit-any-link {
       .post-title {
         font: 3em $primary-font;
       }
-
     }
 
     .post-content {
@@ -582,7 +548,6 @@ a:-webkit-any-link {
       #post-5-img {
         @extend #post-1-img;
       }
-
     }
 
     @mixin previous-next-layout {
@@ -607,13 +572,11 @@ a:-webkit-any-link {
           @include previous-next-layout;
           font-size: 1em;
         }
-
       }
 
       .initial-next-link:hover {
         background-color: $button-hover-color;
       }
-
     }
 
     .previous-next-container {
@@ -621,7 +584,7 @@ a:-webkit-any-link {
       justify-content: space-between;
       border-top: 1px solid gray;
       margin: 40px 50px 0 50px;
-  
+
       .previous {
         @include previous-next-layout;
         margin: 30px 0;
@@ -636,23 +599,19 @@ a:-webkit-any-link {
       }
 
       .next:hover {
-        @extend .previous:hover
+        @extend .previous:hover;
       }
 
       #last-next {
         display: none;
       }
-
     }
-    
   }
-
 }
 
 #blog-post-footer {
   margin-top: -110px;
 }
-
 
 // ##### CONTACT PAGE #####
 
@@ -667,7 +626,7 @@ a:-webkit-any-link {
   justify-content: space-evenly;
   position: relative;
   top: 40px;
-  
+
   .contact-description {
     flex-direction: column;
     justify-content: center;
@@ -682,7 +641,6 @@ a:-webkit-any-link {
       border: 1px solid $primary-color;
       border-radius: 5px;
       margin: 0 0 30px 0px;
-      
     }
 
     p {
@@ -690,7 +648,6 @@ a:-webkit-any-link {
       text-align: justify;
       margin: 0;
     }
-
   }
 
   .contact-form {
@@ -701,23 +658,25 @@ a:-webkit-any-link {
     background-color: #f2f2f2;
     border: 1px solid $primary-color;
     border-radius: 5px;
-    width: 28%; 
+    width: 28%;
     padding: 14px;
     margin-right: 24px;
-    
-    input[type=text], select, textarea {
-      box-sizing: border-box; 
-      width: 100%; 
-      padding: 12px;  
-      margin-top: 6px; 
-      margin-bottom: 16px; 
-      border: 1px solid #ccc; 
-      border-radius: 5px; 
+
+    input[type='text'],
+    select,
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
       font-family: $primary-font;
       font-size: 1.1em;
     }
-    
-    input[type=submit] {
+
+    input[type='submit'] {
       cursor: pointer;
       background-color: $secondary-color;
       border: 1px solid black;
@@ -727,15 +686,12 @@ a:-webkit-any-link {
       font-size: 1em;
       font-weight: 1000;
     }
-    
-    input[type=submit]:hover {
+
+    input[type='submit']:hover {
       background-color: #d7754b;
     }
-
   }
-
 }
-
 
 // ##### MEDIA QUERIES #####
 @media screen and (max-width: 1300px) {
@@ -748,8 +704,6 @@ a:-webkit-any-link {
   }
 }
 
-
-
 @media screen and (max-width: 1200px) {
   .intro-container {
     margin: 0 75px 0 75px;
@@ -761,7 +715,6 @@ a:-webkit-any-link {
 }
 
 @media screen and (max-width: 1024px) {
-
   .intro-container {
     margin: -20px 75px;
 
@@ -771,7 +724,6 @@ a:-webkit-any-link {
   }
 
   .footer {
-
     padding: 0;
 
     .footer-text {
@@ -779,139 +731,119 @@ a:-webkit-any-link {
         font-size: 1.3em;
         padding: 30px 0 0 0;
       }
-
     }
-
   }
 
   .project-container {
-  
     .project-image {
       height: 180px;
     }
-  
+
     .project-description {
-  
       p {
         width: 500px;
       }
-  
     }
-  
   }
-  
-  #project-1, #project-3 {
+
+  #project-1,
+  #project-3 {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
   }
-  
+
   #project-4 {
     margin-bottom: 0;
   }
-  
+
   #projects-footer {
     margin-top: -100px;
   }
 
   .card-container {
-
     #last-card {
       margin-bottom: -20px;
     }
-
   }
 
   .contact-container {
     justify-content: space-evenly;
-    
-    .contact-description { 
-      
+
+    .contact-description {
       #contact-image {
         margin: 0 0 30px 0;
       }
-  
     }
-  
+
     .contact-form {
       margin-right: 0;
       width: 350px;
-  
     }
-
   }
 
   .blog-post {
-  
     .post-container {
       margin: 70px;
 
       .author {
-  
         #author-image {
           width: auto;
           height: 30px;
         }
-  
+
         p {
           font: 0.8em $primary-font;
         }
-  
       }
-      
+
       .post-heading-container {
         @include flex-column;
         text-align: center;
         margin: 30px;
-  
+
         .post-title {
           font: 2em $primary-font;
         }
-  
       }
-  
+
       .post-content {
         font-size: 1em;
-  
+
         #post-1-img {
           width: auto;
           height: 180px;
         }
-  
+
         #post-2-img {
           width: auto;
           height: 180px;
         }
-  
+
         #post-3-img {
           width: auto;
           height: 180px;
         }
-  
+
         #post-4-img {
           width: auto;
-          height: 180px; 
+          height: 180px;
         }
-  
+
         #post-5-img {
           width: auto;
           height: 180px;
         }
-  
       }
-      
     }
-  
   }
-  
+
   #blog-post-footer {
     margin-top: -200px;
   }
-
 }
 
 @media screen and (max-width: 950px) {
   .intro-container {
-
     .profile-picture {
       display: none;
     }
@@ -919,58 +851,44 @@ a:-webkit-any-link {
 }
 
 @media screen and (max-width: 768px) {
-
   .navbar {
     border-bottom-left-radius: 70px;
   }
 
   .intro-container {
- 
     .profile-picture {
       display: none;
     }
-    
   }
 
   .skills-container {
-    
     .skills {
-    
       .tech-icons {
         width: 90px;
         height: 90px;
       }
-    
     }
-  
   }
-  
-  .education-container {
 
+  .education-container {
     .schools {
       display: flex;
       flex-direction: column;
       margin-left: 20px;
 
       .coder-container {
-
         .coder-img {
           transform: scale(0.45);
         }
-
       }
 
       .usyd-container {
-
         .usyd-img {
           margin-left: 2px;
-          transform: scale(0.60);
+          transform: scale(0.6);
         }
-
       }
-
     }
-
   }
 
   .footer {
@@ -981,42 +899,37 @@ a:-webkit-any-link {
     .footer-text {
       font-size: 1em;
     }
-
   }
 
   .project-container {
-  
     .project-image {
       position: relative;
       top: 100px;
       height: 180px;
     }
-  
+
     .project-description {
-  
       p {
         width: 400px;
       }
-  
     }
-  
   }
-  
-  #project-1, #project-3 {
+
+  #project-1,
+  #project-3 {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
   }
-  
+
   #project-4 {
     margin-bottom: 0;
   }
-  
+
   #projects-footer {
     margin-top: -280px;
   }
 
   .card-container {
-
     transform: scale(1.2);
 
     #first-card {
@@ -1026,100 +939,86 @@ a:-webkit-any-link {
     #last-card {
       margin-bottom: 100px;
     }
-
   }
 
   .blog-post {
-  
     .post-container {
       margin: 50px;
 
       .author {
         margin: 0 27px;
-  
+
         #author-image {
           width: auto;
           height: 30px;
         }
-  
+
         p {
           font-size: 0.8em;
         }
-  
       }
-      
+
       .post-heading-container {
         @include flex-column;
         text-align: center;
         margin: 30px;
-  
+
         .post-title {
           font-size: 2em;
         }
-  
       }
-  
+
       .post-content {
         font-size: 1em;
         margin: 0 40px;
-  
+
         #post-1-img {
           width: auto;
           height: 180px;
         }
-  
+
         #post-2-img {
           width: auto;
           height: 180px;
         }
-  
+
         #post-3-img {
           width: auto;
           height: 180px;
         }
-  
+
         #post-4-img {
           width: auto;
-          height: 180px; 
+          height: 180px;
         }
-  
+
         #post-5-img {
           width: auto;
           height: 180px;
         }
-  
       }
-      
     }
-  
   }
-  
+
   #blog-post-footer {
     margin-top: -385px;
   }
 
   .contact-container {
-    
-    
-    .contact-description { 
-      
+    .contact-description {
       #contact-image {
-        margin: 0 0 30px 0; 
+        margin: 0 0 30px 0;
       }
-  
     }
-  
+
     .contact-form {
       width: 470px;
-      margin-bottom:  180px;
+      margin-bottom: 180px;
     }
-
   }
-
 }
 
 @media screen and (max-width: 762px) {
-
   .navbar-social {
     display: none;
   }
@@ -1137,24 +1036,19 @@ a:-webkit-any-link {
       .social-media-icons {
         margin: 22px 0 0 0;
       }
-
     }
-    
-    .footer-text {
 
+    .footer-text {
       p {
         margin-top: 9px;
         padding: 0;
         font-size: 0.7em;
       }
-      
     }
-
   }
 }
 
 @media screen and (max-width: 600px) {
-
   .navbar {
     border-bottom-left-radius: 70px;
   }
@@ -1164,58 +1058,44 @@ a:-webkit-any-link {
     border-top-right-radius: 70px;
     border-bottom-left-radius: 70px;
     .skills {
-  
       .tech-icons {
         width: 70px;
         height: 75px;
       }
-  
     }
-
   }
-
 }
 
 @media screen and (max-width: 425px) {
-
   .navbar {
     height: 5.5em;
     height: 90px;
     border-bottom-left-radius: 60px;
-  
+
     .navbar-list {
-  
       .navbar-item {
         display: inline-block;
         margin-right: 25px;
-        
-  
+
         .navbar-link {
           font-size: 1.2em;
         }
-
       }
-
     }
 
-    .navbar-social { 
+    .navbar-social {
       display: none;
-
     }
-
   }
 
   .intro-container {
     margin: -35px 40px;
 
     .intro-text {
-
       #intro-h3 {
         text-align: left;
       }
-
     }
-
   }
 
   .skills-container {
@@ -1225,7 +1105,6 @@ a:-webkit-any-link {
     .skills {
       transform: scale(0.95);
     }
-
   }
 
   .education-container {
@@ -1246,7 +1125,6 @@ a:-webkit-any-link {
           margin-left: -30px;
           font-size: 0.8em;
         }
-
       }
       .usyd-container {
         align-items: center;
@@ -1259,11 +1137,8 @@ a:-webkit-any-link {
           margin-left: -30px;
           font-size: 0.8em;
         }
-
       }
-
     }
-
   }
 
   .footer {
@@ -1279,54 +1154,50 @@ a:-webkit-any-link {
       .social-media-icons {
         margin: 22px 0 0 0;
       }
-
     }
-    
-    .footer-text {
 
+    .footer-text {
       p {
         margin-top: 6px;
         padding: 0;
         font-size: 0.7em;
       }
-      
     }
-
   }
 
   .project-container {
     flex-direction: column;
     align-items: center;
-  
+
     .project-image {
       position: relative;
       top: -40px;
       height: 300px;
       transform: scale(0.7);
     }
-  
+
     .project-description {
       position: relative;
       top: -30px;
-  
+
       p {
         width: 370px;
       }
-  
     }
-  
   }
-  
-  #project-1, #project-3 {
+
+  #project-1,
+  #project-3 {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
   }
 
-  #project-2, #project-4 {
+  #project-2,
+  #project-4 {
     margin-bottom: -30px;
     flex-direction: column-reverse;
   }
-  
+
   #projects-footer {
     margin-top: -350px;
   }
@@ -1342,11 +1213,9 @@ a:-webkit-any-link {
     #last-card {
       margin-bottom: 150px;
     }
-
   }
 
   .blog-post {
-  
     .post-container {
       position: relative;
       margin: 40px 10px 55px 10px;
@@ -1355,50 +1224,47 @@ a:-webkit-any-link {
         right: 10px;
         margin-left: 0;
         width: 75%;
-  
+
         #author-image {
           width: auto;
           height: 30px;
         }
-  
+
         p {
           font-size: 0.8em;
         }
-  
       }
-      
+
       .post-heading-container {
         margin-top: 45px;
-  
+
         .post-title {
           font-size: 1.6em;
         }
-  
       }
-  
+
       .post-content {
         @include flex-column;
         margin: 0 20px;
 
-  
         #post-1-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-2-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-3-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-4-img {
           width: 280px;
           height: 180px;
@@ -1406,7 +1272,7 @@ a:-webkit-any-link {
           left: 42px;
           margin: 0 0 20px 0;
         }
-  
+
         #post-5-img {
           width: 300px;
           height: 200px;
@@ -1414,67 +1280,53 @@ a:-webkit-any-link {
           left: 33px;
           margin: 0 0 20px 0;
         }
-  
       }
-      
+
       .initial-next-container {
         margin-top: 10px;
 
         .initial-next-button {
-
           .initial-next-link {
             font-size: 1.1em;
           }
-
         }
-
       }
-  
+
       .previous-next-container {
-        
         font-size: 0.9em;
         margin: 10px 20px 0 20px;
-  
       }
-
     }
-  
   }
-  
+
   #blog-post-footer {
     margin-top: -385px;
   }
 
   .contact-container {
-    
-    .contact-description { 
-      
+    .contact-description {
       #contact-image {
         transform: scale(0.9);
-        margin: -20px 0 20px -62px; 
+        margin: -20px 0 20px -62px;
       }
 
       p {
         width: 380px;
         margin-bottom: -10px;
       }
-  
     }
-  
+
     .contact-form {
       width: 350px;
-      margin-bottom:  180px;
+      margin-bottom: 180px;
     }
-
   }
-
 }
 
 @media screen and (max-width: 375px) {
-
   .navbar {
     border-bottom-left-radius: 50px;
-  
+
     .navbar-list {
       margin-left: 25px;
       padding: 0;
@@ -1482,14 +1334,11 @@ a:-webkit-any-link {
       .navbar-item {
         margin-right: 20px;
       }
-
     }
 
-    .navbar-social { 
+    .navbar-social {
       display: none;
-
     }
-
   }
 
   .intro-container {
@@ -1502,14 +1351,11 @@ a:-webkit-any-link {
     border-bottom-left-radius: 50px;
 
     .skills {
-
       .tech-icons {
         width: 55px;
         height: 55px;
       }
-
     }
-
   }
 
   .education-container {
@@ -1528,47 +1374,41 @@ a:-webkit-any-link {
       }
 
       .usyd-container {
-      transform: scale(0.85);
-
+        transform: scale(0.85);
       }
-
     }
-
   }
 
   .footer {
     border-top-right-radius: 50px;
-  } 
+  }
 
   .project-container {
     flex-direction: column;
     align-items: center;
-  
-    .project-description {
 
+    .project-description {
       p {
         width: 330px;
       }
-  
     }
-  
   }
 
-  #project-2, #project-4 {
+  #project-2,
+  #project-4 {
     flex-direction: column-reverse;
 
     .project-description {
       margin-top: -40px;
       margin-bottom: 40px;
     }
-    
+
     .project-image {
       position: relative;
       top: -80px;
     }
-
   }
-  
+
   #projects-footer {
     margin-top: -360px;
   }
@@ -1585,11 +1425,9 @@ a:-webkit-any-link {
     #last-card {
       margin-bottom: -270px;
     }
-
   }
 
   .blog-post {
-  
     .post-container {
       transform: scale(0.9);
       top: -90px;
@@ -1601,50 +1439,47 @@ a:-webkit-any-link {
         right: 10px;
         margin-left: 0;
         width: 75%;
-  
+
         #author-image {
           width: auto;
           height: 30px;
         }
-  
+
         p {
           font-size: 0.8em;
         }
-  
       }
-      
+
       .post-heading-container {
         margin-top: 45px;
-  
+
         .post-title {
           font-size: 1.6em;
         }
-  
       }
-  
+
       .post-content {
         @include flex-column;
         margin: 0 20px;
 
-  
         #post-1-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-2-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-3-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-4-img {
           position: relative;
           left: 0;
@@ -1652,7 +1487,7 @@ a:-webkit-any-link {
           height: 211px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-5-img {
           position: relative;
           left: 0;
@@ -1660,81 +1495,64 @@ a:-webkit-any-link {
           height: 211px;
           margin: 0 30px 20px 30px;
         }
-  
       }
-      
+
       .initial-next-container {
         margin-top: 10px;
 
         .initial-next-button {
-
           .initial-next-link {
             font-size: 1.1em;
           }
-
         }
-
       }
-  
+
       .previous-next-container {
-        
         font-size: 0.9em;
         margin: 10px 20px 0 20px;
-  
       }
-
     }
-  
   }
-  
+
   #blog-post-footer {
     margin-top: -385px;
   }
 
   .contact-container {
-    
-    .contact-description { 
-
+    .contact-description {
       #contact-image {
         transform: scale(1.1);
-        margin: -20px 0 40px -75px; 
+        margin: -20px 0 40px -75px;
       }
 
       p {
         width: 350px;
         margin-bottom: -10px;
       }
-  
     }
-  
+
     .contact-form {
       width: 320px;
       margin-bottom: -270px;
     }
-
   }
-    
 }
 
 @media screen and (max-width: 320px) {
-
   .navbar {
     border-bottom-left-radius: 30px;
-  
+
     .navbar-list {
       margin-left: 12px;
-     
+
       .navbar-item {
         margin-right: 11px;
       }
-
     }
 
-    .navbar-social { 
+    .navbar-social {
       display: none;
-
     }
-
   }
 
   .intro-container {
@@ -1747,13 +1565,10 @@ a:-webkit-any-link {
   }
 
   .education-container {
-
- 
     .schools {
-      
       .coder-container {
         margin-left: -20px;
-       
+
         .coder-img {
           transform: scale(0.3);
         }
@@ -1761,7 +1576,6 @@ a:-webkit-any-link {
         p {
           transform: scale(1.1);
         }
-
       }
 
       .usyd-container {
@@ -1774,11 +1588,8 @@ a:-webkit-any-link {
         p {
           transform: scale(1.1);
         }
-
       }
-
     }
-
   }
 
   .footer {
@@ -1787,8 +1598,7 @@ a:-webkit-any-link {
     .social-footer {
       justify-content: space-around;
     }
-
-  } 
+  }
 
   .project-container {
     flex-direction: column;
@@ -1798,30 +1608,27 @@ a:-webkit-any-link {
       margin-top: -30px;
       transform: scale(0.65);
     }
-  
+
     .project-description {
-      
       p {
         width: 300px;
       }
-  
     }
-  
   }
 
-  #project-2, #project-4 {
+  #project-2,
+  #project-4 {
     flex-direction: column-reverse;
 
     .project-description {
       position: relative;
       top: -30px;
     }
-    
+
     .project-image {
       position: relative;
       top: -60px;
     }
-
   }
 
   #project-4 {
@@ -1829,7 +1636,7 @@ a:-webkit-any-link {
       margin-left: 10px;
     }
   }
-  
+
   #projects-footer {
     margin-top: -360px;
   }
@@ -1838,14 +1645,12 @@ a:-webkit-any-link {
     transform: scale(0.87);
 
     #first-card {
-      
       margin-top: -190px;
     }
 
     #last-card {
-      margin-bottom:  -190px;
+      margin-bottom: -190px;
     }
-
   }
 
   #blog-footer {
@@ -1854,7 +1659,6 @@ a:-webkit-any-link {
   }
 
   .blog-post {
-  
     .post-container {
       transform: scale(0.78);
       top: -300px;
@@ -1866,116 +1670,100 @@ a:-webkit-any-link {
         right: 10px;
         margin-left: 0;
         width: 85%;
-  
+
         #author-image {
           width: auto;
           height: 35px;
         }
-  
+
         p {
           font-size: 1em;
         }
-  
       }
-      
+
       .post-heading-container {
         margin-top: 45px;
-  
+
         .post-title {
           font-size: 1.9em;
         }
-  
       }
-  
+
       .post-content {
         @include flex-column;
         margin: 0 20px;
         font-size: 1.25em;
 
-  
         #post-1-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-2-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-3-img {
           width: auto;
           height: 200px;
           margin: 0 30px 20px 30px;
         }
-  
+
         #post-4-img {
           width: 300px;
           height: 180px;
           position: relative;
           left: 0px;
         }
-  
+
         #post-5-img {
           width: 300px;
           height: 180px;
           position: relative;
           left: 0px;
         }
-  
       }
-      
+
       .initial-next-container {
         margin-top: 10px;
 
         .initial-next-button {
-
           .initial-next-link {
             font-size: 1.1em;
           }
-
         }
-
       }
-  
+
       .previous-next-container {
-        
         font-size: 1.1em;
         margin: 10px 20px 0 20px;
-  
       }
-
     }
-  
   }
-  
+
   #blog-post-footer {
     margin-top: -385px;
   }
 
   .contact-container {
-    
-    .contact-description { 
-
+    .contact-description {
       #contact-image {
         transform: scale(0.9);
-        margin: -40px 0 20px -102px; 
+        margin: -40px 0 20px -102px;
       }
 
       p {
         width: 295px;
         margin-bottom: -10px;
       }
-  
     }
-  
+
     .contact-form {
       width: 270px;
       margin-bottom: -270px;
     }
-
   }
-
 }
